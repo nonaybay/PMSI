@@ -36,3 +36,21 @@
 @function gamma-srgb($value)        {       @return _gamma($value, variable.$srgb-gamma);                   }
 @function gamma-p3($value)          {       @return _gamma($value, variable.$p3-gamma);                     }
 
+
+
+@function luminance($color)         {
+    $r                              :       _value(color.red($color));
+    $g                              :       _value(color.green($color));
+    $b                              :       _value(color.blue($color));
+
+    $r                              :       linear-p3($r);
+    $g                              :       linear-p3($g);
+    $b                              :       linear-p3($b);
+
+    $r                              :       variable.$p3-r * $r;
+    $g                              :       variable.$p3-g * $g;
+    $b                              :       variable.$p3-b * $b;
+
+    @return ($r + $g + $b);
+}
+
