@@ -21,6 +21,18 @@
 
 
 
+@function _gamma($value, $gamma)    {
+    $value                          :       _value($value);
+    $condition                      :       ($value > variable.$gamma);
+    $true                           :       ($maximum-calc * math.pow($value, (1 / $gamma)) - $minimum-calc);
+    
+    @return                         if($condition, $true, $false);
+}
+
+
+
 @function linear-srgb($value)       {       @return _linear($value, variable.$srgb-gamma);                  }
-@function linear-p3($value)         {       @return _linear($value, variable.$p3-gamma);
+@function linear-p3($value)         {       @return _linear($value, variable.$p3-gamma);                    }
+@function gamma-srgb($value)        {       @return _gamma($value, variable.$srgb-gamma);                   }
+@function gamma-p3($value)          {       @return _gamma($value, variable.$p3-gamma);
 
