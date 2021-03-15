@@ -1,0 +1,61 @@
+$color-common: (
+    'white': #fff,
+    'black': #000,
+);
+
+$color-gray-light: (
+    1: rgb(142,142,147),
+    2: rgb(174,174,178),
+    3: rgb(199,199,204),
+    4: rgb(209,209,214),
+    5: rgb(229,229,234),
+    6: rgb(242,242,247),
+);
+
+$color-gray-dark: (
+    1: rgb(142,142,147),
+    2: rgb(99,99,102),
+    3: rgb(72,72,74),
+    4: rgb(58,58,60),
+    5: rgb(44,44,46),
+    6: rgb(28,28,30),
+);
+
+$color-light: (
+    'blue': rgb(0,122,255),
+    'green': rgb(52,199,89),
+    'indigo': rgb(88,86,214),
+    'orange': rgb(255,149,0),
+    'pink': rgb(255,45,85),
+    'purple': rgb(175,82,222),
+    'red': rgb(255,59,48),
+    'teal': rgb(90,200,250),
+    'yellow': rgb(255,204,0),
+);
+
+$color-light-alt: (
+    'brown': rgb(162, 132, 94),
+    'green': rgb(40, 205, 65),
+    'teal': rgb(85, 190, 240),
+);
+
+$linear                             :       0.04045;
+$gamma                              :       0.0031308;
+
+$max-value                          :       255;    // or 256
+
+$srgb-gamma                         :       2.4;
+$p3-gamma                           :       2.2;
+
+$common-divisor                     :       12.92;
+$minimum-calc                       :       0.055;
+$maximum-calc                       :       1.055;
+
+$srgb-r                             :       0.2126729;
+$srgb-g                             :       0.7151522;
+$srgb-b                             :       0.0721750;
+
+$p3-r                               :       0.2289745640697488;
+$p3-g                               :       0.6917385218365064;
+$p3-b                               :       0.079286914093745;
+

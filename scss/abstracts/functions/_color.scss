@@ -1,0 +1,22 @@
+@use 'sass:color';
+@use 'sass:map';
+@use 'sass:math';
+
+@use '../variables/color' as variable;
+
+
+@function _c($value)                {       @return if(($value < 0), 0, if(($value > 1), 1, $value));       }
+@function _value($value)            {       @return _c($value / variable.$max-value);                       }
+
+@function _linear($value, $gamma) {
+    $value                          :       _value($value);
+    $condition                      :       ($value < variable.$linear);
+    $true                           :       ($value / variable.$common-divisor);
+    $false                          :       math.pow((($value + variable.$minimum-calc) / variable.$maximum-calc), $gamma);
+
+    @return                         if($condition, $true, $false);
+}
+
+@function linear-srgb($value)       {       @return _linear($value, variable.$srgb-gamma);                  }
+@function linear-p3($value)         {       @return _linear($value, variable.$p3-gamma);
+
