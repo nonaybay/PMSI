@@ -34,5 +34,5 @@
 @function linear-srgb($value)       {       @return _linear($value, variable.$srgb-gamma);                  }
 @function linear-p3($value)         {       @return _linear($value, variable.$p3-gamma);                    }
 @function gamma-srgb($value)        {       @return _gamma($value, variable.$srgb-gamma);                   }
-@function gamma-p3($value)          {       @return _gamma($value, variable.$p3-gamma);
+@function gamma-p3($value)          {       @return _gamma($value, variable.$p3-gamma);                     }
 
