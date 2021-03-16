@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   border: none;
   box-sizing: border-box;
@@ -5,9 +6,21 @@
   margin: 0;
   outline: none;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga";
 }
 *::before, *::after {
   box-sizing: inherit;
+}
+
+html {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4kwallpapers.com%2Fimages%2Fwallpapers%2Fmacos-big-sur-apple-layers-fluidic-colorful-wwdc-stock-2020-3840x2160-1455.jpg&f=1&nofb=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
 body {
@@ -17,49 +30,151 @@ body {
 
 .button {
   background: none;
+  border: none !important;
   font: inherit;
 }
 
 .button {
   font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, serif, system-ui;
-  font-size: 0.8235294118em;
+  font-size: 0.8823529412em;
   font-style: normal;
-  font-weight: 600;
-  letter-spacing: -0.011em;
-  line-height: 1.3571428571;
+  font-weight: 500;
+  letter-spacing: -0.016em;
+  line-height: 1.3333333333;
   cursor: pointer;
+}
+.button * {
+  transition: all 200ms ease;
 }
 
 .button__push {
   border-color: transparent;
-  border-radius: 0.8571428571em;
+  border-radius: 0.8em;
   border-style: solid;
-  border-width: 0.0714285714em;
-  height: 3em;
-  line-height: 2.8571428571;
-  min-width: 7.7857142857em;
-  padding: 0 1.4285714286em;
+  border-width: 0.0666666667em;
+  height: 2.8em;
+  line-height: 2.8;
+  max-width: 10em;
+  overflow: hidden;
+  padding: 0 0.8em;
   text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .button__push--global {
   background-color: #f2f2f7;
-  background-image: linear-gradient(to bottom, #f2f2f7, #e1e1e6);
   border-color: #c7c7cc;
   color: #1c1c1e;
 }
 .button__push--global:hover {
-  background-color: #e7e7ec;
-  background-image: linear-gradient(to bottom, #e7e7ec, #d1d1d6);
+  background-color: #e1e1e6;
 }
-.button__push--default {
-  background-color: #57a7ff;
-  background-image: linear-gradient(to bottom, #57a7ff, #007aff);
-  border-color: #007aff;
+.button__push--default, .button__pull-down label::after {
+  background-color: #007aff;
+  border-color: #0272ed;
   color: #f2f2f7;
 }
-.button__push--default:hover {
-  background-color: #54a0f4;
-  background-image: linear-gradient(to bottom, #54a0f4, #0272ed);
+.button__push--default:hover, .button__pull-down label:hover::after {
+  background-color: #0272ed;
+}
+.button__pull-down {
+  display: block;
+  margin: auto;
+  max-width: 320px;
+  padding: 0;
+  width: auto;
+  overflow: hidden;
+  border-radius: 0;
+}
+.button__pull-down label {
+  border-radius: 0.8em;
+  display: flex;
+  height: 34px;
+  max-width: none;
+  padding: 0;
+  width: auto;
+  justify-content: space-between;
+}
+.button__pull-down label::before {
+  content: attr(data-label);
+  height: 34px;
+  font-weight: 600;
+  padding-left: 13px;
+  text-align: left;
+  text-transform: uppercase;
+  width: auto;
+}
+.button__pull-down label::after {
+  content: "";
+  font-family: "Material Icons";
+  font-size: 21px;
+  height: 34px;
+  line-height: 34px;
+  padding: 0;
+  text-align: center;
+  vertical-align: text-bottom;
+  width: 34px;
+}
+.button__pull-down nav {
+  border-radius: 0.8em;
+  display: block;
+  position: relative;
+  backdrop-filter: saturate(180%) blur(21px);
+  background-color: rgba(242, 242, 247, 0.55);
+  overflow: hidden;
+  width: auto;
+  height: 3px;
+  top: -16px;
+  z-index: -1;
+  transition: all 165ms ease;
+}
+.button__pull-down nav ul {
+  background: none;
+  border-radius: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  overflow: hidden;
+  padding: 12px;
+  width: auto;
+}
+.button__pull-down nav ul li {
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, serif, system-ui;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.026em;
+  line-height: 1.2941176471;
+  display: block;
+}
+.button__pull-down nav ul li:not(:first-of-type)::before {
+  background: rgba(0, 0, 0, 0.34);
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+}
+.button__pull-down nav ul li a {
+  color: #1c1c1e;
+  display: block;
+  font: inherit;
+  padding: 7px 0;
+  text-decoration: none;
+}
+.button__enabler:checked ~ .button__pull-down label {
+  border-radius: 0.8em 0.8em 0 0;
+}
+.button__enabler:checked ~ .button__pull-down nav {
+  border-radius: 0 0 0.8em 0.8em;
+  top: 0;
+  height: auto;
+  transition: top 165ms ease;
+}
+
+section {
+  display: block;
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */

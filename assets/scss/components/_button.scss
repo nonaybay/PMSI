@@ -1,3 +1,4 @@
+@use '../abstracts/variables/typography' as varFont;
 @use '../abstracts/functions/color' as functionColor;
 @use '../abstracts/mixins/typography' as mixinFont;
 
@@ -5,15 +6,20 @@ body { padding: 22px; font-size: 17px; }
 
 .button {
     background: none;
+    border: none !important;
     font: inherit;
 }
 
-$fs: 14;
+$fs: 15;
 
 %button {
-    @include mixinFont.generate-typography($fs, 'semibold', 'normal');
+    @include mixinFont.generate-typography($fs, 'medium', 'normal');
     
     cursor: pointer;
+
+    * {
+        transition: all 200ms ease;
+    }
 }
 
 .button {
@@ -25,10 +31,13 @@ $fs: 14;
         border-style: solid;
         border-width: (1 / $fs * 1em);
         height: (42 / $fs * 1em);
-        line-height: (40 / $fs); 
-        min-width: ((89 + 20) / $fs * 1em);
-        padding: 0 (20 / $fs * 1em);
+        line-height: (42 / $fs); 
+        max-width: (($fs * 10) / $fs * 1em);
+        overflow: hidden;
+        padding: 0 (12 / $fs * 1em);
         text-align: center;
+        text-overflow: ellipsis;
+        white-space: nowrap;
 
         $dark: functionColor.color-gray('dark', 6);
 
@@ -38,45 +47,152 @@ $fs: 14;
 
             background: {
                 color: $bg-start;
-                image: linear-gradient(to bottom, $bg-start, $bg-stop);
             };
 
             border-color: functionColor.color-gray('light', 3);
             color: functionColor.color-gray('dark', 6);
 
             &:hover {
-                $bg-start: mix($dark, $bg-start, 5%);
-                $bg-stop: mix($dark, $bg-stop, 8%);
-
                 background: {
-                    color: $bg-start;
-                    image: linear-gradient(to bottom, $bg-start, $bg-stop);
+                    color: $bg-stop;
                 };
             }
         }
 
         &--default {
-            $bg-start: mix(white, functionColor.colored('blue'), 34%);
-            $bg-stop: functionColor.colored('blue');
+            $bg-start: functionColor.colored('blue');
+            $bg-stop: mix($dark, $bg-start, 8%);
 
             background: {
                 color: $bg-start;
-                image: linear-gradient(to bottom, $bg-start, $bg-stop);
             };
             border-color: $bg-stop;
             color: functionColor.color-gray('light', 6);
 
             &:hover {
-                $bg-start: mix($dark, $bg-start, 5%);
-                $bg-stop: mix($dark, $bg-stop, 8%);
-
                 background: {
-                    color: $bg-start;
-                    image: linear-gradient(to bottom, $bg-start, $bg-stop);
+                    color: $bg-stop;
                 };
+            }
+        }
+    }
+
+    &__pull-down {
+        display: block;
+        margin: auto;
+        max-width: 320px;
+        padding: 0;
+        width: auto;
+        overflow: hidden;
+        border-radius: 0;
+
+        label {
+            border-radius: ((12 / $fs) * 1em);
+            display: flex;
+            height: 34px;
+            max-width: none;
+            padding: 0;
+            width: auto;
+            justify-content: space-between;
+
+            &::before {
+                content: attr(data-label);
+                height: 34px;
+                font-weight: 600;
+                padding-left: 13px;
+                text-align: left;
+                text-transform: uppercase;
+                width: auto;
+            }
+
+            &::after {
+                @extend .button__push--default;
+
+                content: '\e5cf';
+                font-family: 'Material Icons';
+                font-size: 21px;
+                height: 34px;
+                line-height: 34px;
+                padding: 0;
+                text-align: center;
+                vertical-align: text-bottom;
+                width: 34px;
+            }
+        }
+
+        nav {
+            border-radius: ((12 / $fs) * 1em);
+            display: block;
+            position: relative;
+            backdrop-filter: saturate(180%) blur(21px);
+            background-color: rgba(functionColor.color-gray('light', 6), 0.55);
+            overflow: hidden;
+            width: auto;
+            height: 3px;
+            top: -16px;
+            z-index: -1;
+            transition: all 165ms ease;
+
+            ul {
+                $shadow: functionColor.color-gray('dark', 6);
+                $r: (12 / $fs * 1em);
+
+                background: none;
+                border-radius: 0;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                margin-top: 0;
+                overflow: hidden;
+                padding: 12px;
+                width: auto;
+
+                li {
+                    @include mixinFont.generate-typography(17, 'normal', 'normal');
+
+                    display: block;
+
+                    &:not(:first-of-type) {
+                        &::before {
+                            background: rgba(black, 0.34);
+                            content: '';
+                            display: block;
+                            height: 1px;
+                            width: 100%;
+                        }
+                    }
+
+                    a {
+                        color: functionColor.color-gray('dark', 6);
+                        display: block;
+                        font: inherit;
+                        padding: 7px 0;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &__enabler {
+        &:checked ~ {
+            .button__pull-down {
+                label {
+                    border-radius: ((12 / $fs) * 1em) ((12 / $fs) * 1em) 0 0;
+                }
+                nav {
+                        border-radius: 0 0 ((12 / $fs) * 1em) ((12 / $fs) * 1em);
+                        top: 0;
+                        height: auto;
+                        transition: top 165ms ease;
+                }
             }
         }
     }
 }
 
+section {
+    display: block;
+    width: 100%;
+}
 
