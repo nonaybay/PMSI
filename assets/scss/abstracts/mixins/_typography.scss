@@ -21,3 +21,11 @@ body {
     @include generate-typography(17, 'regular', 'normal');
 }
 
+p {
+    @include generate-typography(17, 'regular', 'normal');
+}
+
+h1 {
+    @include generate-typography(34, 'regular', 'normal');
+}
+

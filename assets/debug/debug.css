@@ -12,4 +12,22 @@ body {
   line-height: 1.2941176471;
 }
 
+p {
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, serif, system-ui;
+  font-size: 1em;
+  font-style: "normal";
+  font-weight: 400;
+  letter-spacing: -0.026em;
+  line-height: 1.2941176471;
+}
+
+h1 {
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, serif, system-ui;
+  font-size: 2em;
+  font-style: "normal";
+  font-weight: 400;
+  letter-spacing: 0.012em;
+  line-height: 1.2058823529;
+}
+
 /*# sourceMappingURL=debug.css.map */
