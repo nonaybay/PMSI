@@ -1,0 +1,32 @@
+@use 'sass:map';
+
+@use '../variables/typography' as variable;
+
+
+@function _em($x, $y: 17) { @return (($x / $y) * 1em); }
+
+@function font-family($font-size: 17) {
+    $condition: ($font-size <= 19);
+    $true: variable.$typeface-lower;
+    $false: variable.$typeface-higher;
+
+    @return if($condition, $true, $false);
+}
+
+@function font-size($font-size: 17) {
+    @return _em($font-size);
+}
+
+@function font-style($font-style: 'normal') {
+    @return $font-style;
+}
+
+@function font-weight($font-weight-name: 'regular') {
+    @if map.has-key(variable.$weights, $font-weight-name) {
+        @return map.get(variable.$weights, $font-weight-name);
+    } @else {
+        @warn '< erro > não existe uma chave com o nome de [ #{$font-weight-name} ] no mapa $weights. retornando [ 400 ]';
+        @return map.get(variable.$weights, 'regular');
+    }
+}
+
