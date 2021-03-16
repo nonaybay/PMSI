@@ -30,3 +30,24 @@
     }
 }
 
+@function letter-spacing($font-size) {
+    @if map.has-key(variable.$tracking, $font-size) {
+        @return _em(map.get(variable.$tracking, $font-size), 1000);
+    } @else {
+        @return normal;
+    }
+}
+
+@function _leading($x, $y) { @return ($x / $y); }
+
+@function line-height($font-size) {
+    @if ($font-size <= 11) { @return _leading(($font-size + 2), $font-size); }
+    @else if ($font-size <= 12) { @return _leading(($font-size + 4), $font-size); }
+    @else if ($font-size <= 21) { @return _leading(($font-size + 5), $font-size); }
+    @else if ($font-size <= 29) { @return _leading(($font-size + 6), $font-size); }
+    @else if ($font-size <= 37) { @return _leading(($font-size + 7), $font-size); }
+    @else if ($font-size <= 45) { @return _leading(($font-size + 8), $font-size); }
+    @else if ($font-size <= 53) { @return _leading(($font-size + 9), $font-size); }
+    @else { @return _leading(($font-size + 10), $font-size); }
+}
+
