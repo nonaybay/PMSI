@@ -1,1 +1,1 @@
-Veja onlyne: <https://nonaybay.github.io/PMSI/>
+Veja online: <https://nonaybay.github.io/PMSI/>
