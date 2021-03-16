@@ -1,0 +1,57 @@
+* {
+  border: none;
+  box-sizing: border-box;
+  font: inherit;
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
+*::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 22px;
+}
+
+.button {
+  background: none;
+  font: inherit;
+}
+
+.button {
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, serif, system-ui;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.026em;
+  line-height: 1.2941176471;
+  cursor: pointer;
+}
+
+.button__push {
+  border-color: transparent;
+  border-radius: 0.7647058824em;
+  border-style: solid;
+  border-width: 0.0588235294em;
+  box-shadow: 0 0.7647058824em 2em 0 #d1d1d6;
+  height: 2.125em;
+  min-width: 5.2352941176em;
+  padding: 0 0.7058823529em;
+  text-align: center;
+}
+.button__push:hover {
+  box-shadow: 0 0 0.7647058824em 0 rgba(58, 58, 60, 0.21);
+}
+.button__push--global {
+  background-color: #f2f2f7;
+  border-color: #c7c7cc;
+  color: #1c1c1e;
+}
+.button__push--default {
+  background-color: #007aff;
+  background-image: linear-gradient(to bottom, #0a84ff, #007aff);
+  color: #f2f2f7;
+}
+
+/*# sourceMappingURL=index.css.map */
