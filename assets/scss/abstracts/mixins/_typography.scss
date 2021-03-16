@@ -1,0 +1,23 @@
+@use '../functions/typography' as function;
+
+
+@mixin generate-typography($font-size, $font-weight, $font-style) {
+    font: {
+        family: function.font-family($font-size);
+        size: function.font-size($font-size);
+        style: function.font-style($font-style);
+        weight: function.font-weight($font-weight);
+    };
+    letter-spacing: function.letter-spacing($font-size);
+    line-height: function.line-height($font-size);
+}
+
+/* DEMO: DEBUG ONLY */
+:root {
+    font-size: 17px;
+}
+
+body {
+    @include generate-typography(17, 'regular', 'normal');
+}
+
