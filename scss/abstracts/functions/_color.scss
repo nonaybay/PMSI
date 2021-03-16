@@ -81,3 +81,35 @@ $luminance-base                     :       luminance(hsl(0, 0%, 50%));
     @return ($maximum / $minimum);
 }
 
+
+
+@function _gray-light($index) {
+    @if map.has-key(variable.$color-gray-light, $index) {
+        @return map.get(variable.$color-gray-light, $index);
+    } @else {
+        @warn '< error > ~ Not found key [#{$index}] in map $color-gray-light. Returning rgb(142, 142, 147) instead.';
+        @return map.get(variable.$color-gray-light, 1);
+    }
+}
+
+
+
+@function _gray-dark($index) {
+    @if map.has-key(variable.$color-gray-dark, $index) {
+        @return map.get(variable.$color-gray-dark, $index);
+    } @else {
+        @warn '< error > ~ Not found key [#{$index}] in map $color-gray-dark. Returning rgb(142, 142, 147) instead.';
+        @return map.get(variable.$color-gray-dark, 1);
+    }
+}
+
+
+
+@function color-gray($tone, $index) {
+    $condition: ($tone == 'light');
+    $true: _gray-light($index);
+    $false: _gray-dark($index);
+
+    @return if($condition, $true, $false);
+}
+
