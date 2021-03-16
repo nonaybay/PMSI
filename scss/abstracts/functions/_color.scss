@@ -39,9 +39,9 @@
 
 
 @function luminance($color)         {
-    $r                              :       _value(color.red($color));
-    $g                              :       _value(color.green($color));
-    $b                              :       _value(color.blue($color));
+    $r                              :       color.red($color);
+    $g                              :       color.green($color);
+    $b                              :       color.blue($color);
 
     $r                              :       linear-p3($r);
     $g                              :       linear-p3($g);
@@ -52,5 +52,32 @@
     $b                              :       variable.$p3-b * $b;
 
     @return ($r + $g + $b);
+}
+
+
+
+$luminance-base                     :       luminance(hsl(0, 0%, 50%));
+
+
+
+@function determine-luminance($color) {
+    $luminance                      :       luminance($color);
+    $condition                      :       ($luminance >= $luminance-base);
+    $true                           :       'light';
+    $false                          :       'dark';
+
+    @return if($condition, $true, $false);
+}
+
+
+
+@function get-contrast-ratio($alpha, $beta) {
+    $luminance-alpha                :       luminance($alpha);
+    $luminance-beta                 :       luminance($beta);
+
+    $maximum                        :       (math.max($luminance-alpha, $luminance-beta) + 0.05);
+    $minimum                        :       (math.min($luminance-alpha, $luminance-beta) + 0.05);
+
+    @return ($maximum / $minimum);
 }
 
