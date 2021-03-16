@@ -113,3 +113,26 @@ $luminance-base                     :       luminance(hsl(0, 0%, 50%));
     @return if($condition, $true, $false);
 }
 
+
+
+@function color-dark($color) {
+    $r: color.red($color) + 10;
+    $g: color.green($color) + 10;
+    $b: color.blue($color) + 10;
+
+    @return rgb($r, $g, $b);
+}
+
+
+
+@function colored($color-name) {
+    @if map.has-key(variable.$color-light, $color-name) {
+        @return map.get(variable.$color-light, $color-name);
+    } @else if map.has-key(variable.$color-light-alt, $color-name) {
+        @return map.get(variable.$color-light-alt, $color-name);
+    } @else {
+        @warn '< error > ~ color name not found [#{$color-name}] on the $color-light and $color-light-alt maps. Returning gray 1 instead.'
+        @return color-gray('light', 1);
+    }
+}
+
