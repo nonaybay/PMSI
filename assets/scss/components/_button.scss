@@ -19,24 +19,15 @@ body { padding: 22px; font-size: 17px; }
     @extend %button;
 
     &__push {
-        $shadow-color: rgba(functionColor.color-gray('dark', 2), 0.21);
-        $shadow-hover: rgba(functionColor.color-gray('dark', 6), 0.21);
-        //$shadow-color: functionColor.color-gray('light', 4);
-
         border-color: transparent;
         border-radius: (13 / 17 * 1em);
         border-style: solid;
         border-width: (1 / 17 * 1em);
-        box-shadow: (3 / 17 * 1em) (8 / 17 * 1em) (21 / 17 * 1em) 0 $shadow-color;
-        height: (40 / 17 * 1em);
+        height: (42 / 17 * 1em);
         line-height: (40 / 17); 
         min-width: ((89 + 20) / 17 * 1em);
         padding: 0 (20 / 17 * 1em);
         text-align: center;
-
-        &:hover {
-            box-shadow: 0 0 (8 / 17 * 1em) 0 $shadow-hover;
-        }
 
         &--global {
             background-color: functionColor.color-gray('light', 6);

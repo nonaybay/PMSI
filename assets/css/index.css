@@ -35,15 +35,11 @@ body {
   border-radius: 0.7647058824em;
   border-style: solid;
   border-width: 0.0588235294em;
-  box-shadow: 0.1764705882em 0.4705882353em 1.2352941176em 0 rgba(99, 99, 102, 0.21);
-  height: 2.3529411765em;
+  height: 2.4705882353em;
   line-height: 2.3529411765;
   min-width: 6.4117647059em;
   padding: 0 1.1764705882em;
   text-align: center;
-}
-.button__push:hover {
-  box-shadow: 0 0 0.4705882353em 0 rgba(28, 28, 30, 0.21);
 }
 .button__push--global {
   background-color: #f2f2f7;
