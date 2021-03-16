@@ -1,7 +1,7 @@
 @use '../abstracts/functions/color' as functionColor;
 @use '../abstracts/mixins/typography' as mixinFont;
 
-body { padding: 22px; }
+body { padding: 22px; font-size: 17px; }
 
 .button {
     background: none;
@@ -19,22 +19,23 @@ body { padding: 22px; }
     @extend %button;
 
     &__push {
-        $shadow-color: rgba(functionColor.color-gray('dark', 2), 0.34);
-        $shadow-hover: rgba(functionColor.color-gray('dark', 4), 0.21);
-        $shadow-color: functionColor.color-gray('light', 4);
+        $shadow-color: rgba(functionColor.color-gray('dark', 2), 0.21);
+        $shadow-hover: rgba(functionColor.color-gray('dark', 6), 0.21);
+        //$shadow-color: functionColor.color-gray('light', 4);
 
         border-color: transparent;
         border-radius: (13 / 17 * 1em);
         border-style: solid;
         border-width: (1 / 17 * 1em);
-        box-shadow: 0 (13 / 17 * 1em) (34 / 17 * 1em) 0 $shadow-color;
-        height: (34 / 16 * 1em);
-        min-width: (89 / 17 * 1em);
-        padding: 0 (12 / 17 * 1em);
+        box-shadow: (3 / 17 * 1em) (8 / 17 * 1em) (21 / 17 * 1em) 0 $shadow-color;
+        height: (40 / 17 * 1em);
+        line-height: (40 / 17); 
+        min-width: ((89 + 20) / 17 * 1em);
+        padding: 0 (20 / 17 * 1em);
         text-align: center;
 
         &:hover {
-            box-shadow: 0 0 (13 / 17 * 1em) 0 $shadow-hover;
+            box-shadow: 0 0 (8 / 17 * 1em) 0 $shadow-hover;
         }
 
         &--global {
