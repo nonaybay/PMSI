@@ -11,21 +11,3 @@
     letter-spacing: function.letter-spacing($font-size);
     line-height: function.line-height($font-size);
 }
-
-/* DEMO: DEBUG ONLY */
-:root {
-    font-size: 17px;
-}
-
-body {
-    @include generate-typography(17, 'regular', 'normal');
-}
-
-p {
-    @include generate-typography(17, 'regular', 'normal');
-}
-
-h1 {
-    @include generate-typography(34, 'regular', 'normal');
-}
-

@@ -18,7 +18,7 @@
 }
 
 @function font-style($font-style: 'normal') {
-    @return $font-style;
+    @return unquote('#{$font-style}');
 }
 
 @function font-weight($font-weight-name: 'regular') {
