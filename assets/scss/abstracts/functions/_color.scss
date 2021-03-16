@@ -131,7 +131,7 @@ $luminance-base                     :       luminance(hsl(0, 0%, 50%));
     } @else if map.has-key(variable.$color-light-alt, $color-name) {
         @return map.get(variable.$color-light-alt, $color-name);
     } @else {
-        @warn '< error > ~ color name not found [#{$color-name}] on the $color-light and $color-light-alt maps. Returning gray 1 instead.'
+        @warn '< error > ~ color name not found [#{$color-name}] on the $color-light and $color-light-alt maps. Returning gray 1 instead.';
         @return color-gray('light', 1);
     }
 }

@@ -1,0 +1,42 @@
+//  Summary
+//
+//      1 ~ font-family
+//      1.1 ~ fallbacks by Operating System
+//      1.2 ~ optimize fallbacks
+//      1.3 ~ font-family <= 19 and >= 20
+
+
+
+
+
+
+
+
+//  [1]
+//  [1.1]
+$typeface-fallback-macosx-elcapitan: 'San Francisco';
+$typeface-fallback-macosx-yosemite: 'Helvetica Neue';
+$typeface-fallback-macosx-mavericks: 'Lucida Grande';
+$typeface-fallback-windows-vista: 'Segoe UI';
+$typeface-fallback-windows-xp: 'Tahoma';
+$typeface-fallback-windows-me: 'Microsoft Sans Serif';
+$typeface-fallback-android-i: 'Roboto';
+$typeface-fallback-android-c: 'Droid Sans';
+$typeface-fallback-ubuntu: 'Ubuntu';
+
+//  [1.2]
+$typeface-fallback-macosx: $typeface-fallback-macosx-elcapitan, $typeface-fallback-macosx-yosemite, $typeface-fallback-macosx-mavericks;
+$typeface-fallback-windows: $typeface-fallback-windows-vista, $typeface-fallback-windows-xp, $typeface-fallback-windows-me;
+$typeface-fallback-android: $typeface-fallback-android-i, $typeface-fallback-android-c;
+$typeface-fallback-linux: $typeface-fallback-ubuntu, 'Cantarell';
+$typeface-fallback-symbols: 'SF Pro Icons', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+$typeface-fallback-middle: $typeface-fallback-macosx, $typeface-fallback-windows, $typeface-fallback-android, $typeface-fallback-linux;
+$typeface-fallback-prefix: -apple-system, BlinkMacSystemFont, X-LocaleSpecific;
+$typeface-fallback-suffix: $typeface-fallback-symbols, sans-serif, serif, system-ui;
+
+$typeface-fallback: $typeface-fallback-prefix, $typeface-fallback-middle, $typeface-fallback-suffix;
+
+//  [1.3]
+$typeface-lower: 'SF Pro Text', $typeface-fallback;
+$typeface-higher: 'SF Pro Display', $typeface-fallback;
