@@ -8,10 +8,11 @@ body { padding: 22px; font-size: 17px; }
     font: inherit;
 }
 
+$fs: 14;
 
 %button {
-    @include mixinFont.generate-typography(17, 'regular', 'normal');
-
+    @include mixinFont.generate-typography($fs, 'semibold', 'normal');
+    
     cursor: pointer;
 }
 
@@ -20,25 +21,60 @@ body { padding: 22px; font-size: 17px; }
 
     &__push {
         border-color: transparent;
-        border-radius: (13 / 17 * 1em);
+        border-radius: (12 / $fs * 1em);
         border-style: solid;
-        border-width: (1 / 17 * 1em);
-        height: (42 / 17 * 1em);
-        line-height: (40 / 17); 
-        min-width: ((89 + 20) / 17 * 1em);
-        padding: 0 (20 / 17 * 1em);
+        border-width: (1 / $fs * 1em);
+        height: (42 / $fs * 1em);
+        line-height: (40 / $fs); 
+        min-width: ((89 + 20) / $fs * 1em);
+        padding: 0 (20 / $fs * 1em);
         text-align: center;
 
+        $dark: functionColor.color-gray('dark', 6);
+
         &--global {
-            background-color: functionColor.color-gray('light', 6);
+            $bg-start: functionColor.color-gray('light', 6);
+            $bg-stop: mix($dark, $bg-start, 8%);
+
+            background: {
+                color: $bg-start;
+                image: linear-gradient(to bottom, $bg-start, $bg-stop);
+            };
+
             border-color: functionColor.color-gray('light', 3);
             color: functionColor.color-gray('dark', 6);
+
+            &:hover {
+                $bg-start: mix($dark, $bg-start, 5%);
+                $bg-stop: mix($dark, $bg-stop, 8%);
+
+                background: {
+                    color: $bg-start;
+                    image: linear-gradient(to bottom, $bg-start, $bg-stop);
+                };
+            }
         }
 
         &--default {
-            background-color: functionColor.colored('blue');
-            background-image: linear-gradient(to bottom, functionColor.color-dark(functionColor.colored('blue')), functionColor.colored('blue'));
+            $bg-start: mix(white, functionColor.colored('blue'), 34%);
+            $bg-stop: functionColor.colored('blue');
+
+            background: {
+                color: $bg-start;
+                image: linear-gradient(to bottom, $bg-start, $bg-stop);
+            };
+            border-color: $bg-stop;
             color: functionColor.color-gray('light', 6);
+
+            &:hover {
+                $bg-start: mix($dark, $bg-start, 5%);
+                $bg-stop: mix($dark, $bg-stop, 8%);
+
+                background: {
+                    color: $bg-start;
+                    image: linear-gradient(to bottom, $bg-start, $bg-stop);
+                };
+            }
         }
     }
 }

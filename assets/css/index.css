@@ -22,34 +22,44 @@ body {
 
 .button {
   font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, serif, system-ui;
-  font-size: 1em;
+  font-size: 0.8235294118em;
   font-style: normal;
-  font-weight: 400;
-  letter-spacing: -0.026em;
-  line-height: 1.2941176471;
+  font-weight: 600;
+  letter-spacing: -0.011em;
+  line-height: 1.3571428571;
   cursor: pointer;
 }
 
 .button__push {
   border-color: transparent;
-  border-radius: 0.7647058824em;
+  border-radius: 0.8571428571em;
   border-style: solid;
-  border-width: 0.0588235294em;
-  height: 2.4705882353em;
-  line-height: 2.3529411765;
-  min-width: 6.4117647059em;
-  padding: 0 1.1764705882em;
+  border-width: 0.0714285714em;
+  height: 3em;
+  line-height: 2.8571428571;
+  min-width: 7.7857142857em;
+  padding: 0 1.4285714286em;
   text-align: center;
 }
 .button__push--global {
   background-color: #f2f2f7;
+  background-image: linear-gradient(to bottom, #f2f2f7, #e1e1e6);
   border-color: #c7c7cc;
   color: #1c1c1e;
 }
+.button__push--global:hover {
+  background-color: #e7e7ec;
+  background-image: linear-gradient(to bottom, #e7e7ec, #d1d1d6);
+}
 .button__push--default {
-  background-color: #007aff;
-  background-image: linear-gradient(to bottom, #0a84ff, #007aff);
+  background-color: #57a7ff;
+  background-image: linear-gradient(to bottom, #57a7ff, #007aff);
+  border-color: #007aff;
   color: #f2f2f7;
+}
+.button__push--default:hover {
+  background-color: #54a0f4;
+  background-image: linear-gradient(to bottom, #54a0f4, #0272ed);
 }
 
 /*# sourceMappingURL=index.css.map */
