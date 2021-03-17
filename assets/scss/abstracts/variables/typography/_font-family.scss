@@ -19,7 +19,7 @@ $-basic-fallback: $-macosx-fallback, $-windows-fallback, $-linux-fallback, $-sym
 $-prefix-fallback: -apple-system, BlinkMacSystemFont, X-LocaleSpecific;
 $-suffix-fallback: sans-serif, system-ui;
 
-$-basic-mono-fallback: 'Menlo', 'Monaco', 'Consolas', 'Roboto Mono', 'Ubuntu Mono', 'DejaVu Sans Mono', 'Hack';
+$-basic-mono-fallback: 'JetBrains Mono', 'Fira Code', 'Menlo', 'Monaco', 'Consolas', 'Roboto Mono', 'Ubuntu Mono', 'DejaVu Sans Mono', 'Hack';
 $-suffix-mono-fallback: monospace, $-basic-fallback, $-suffix-fallback;
 
 $-lower-fallback: 'SF Pro Text';

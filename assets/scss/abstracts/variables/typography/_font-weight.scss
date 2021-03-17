@@ -1,0 +1,21 @@
+$-font-weight-thin: 100;
+$-font-weight-ultralight: 200;
+$-font-weight-light: 300;
+$-font-weight-regular: 400;
+$-font-weight-medium: 500;
+$-font-weight-semibold: 600;
+$-font-weight-bold: 700;
+$-font-weight-ultrabold: 800;
+$-font-weight-black: 900;
+
+$mapping: (
+  'thin': $-font-weight-thin,
+  'ultralight': $-font-weight-ultralight,
+  'light': $-font-weight-light,
+  'regular': $-font-weight-regular,
+  'medium': $-font-weight-medium,
+  'semibold': $-font-weight-semibold,
+  'bold': $-font-weight-bold,
+  'ultrabold': $-font-weight-ultrabold,
+  'heavy': $-font-weight-black,
+);
