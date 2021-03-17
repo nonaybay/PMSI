@@ -1,0 +1,21 @@
+@use 'sass:map';
+
+@use '../../variables/typography/font-family' as variable;
+
+
+@function font-family($font-size, $breakpoint) {
+  $font-size-condition: ($font-size <= 19);
+  @if ($breakpoint == 'sm') {
+    @if $font-size-condition {
+      @return variable.$font-family-sm-text;
+    } @else {
+      @return variable.$font-family-sm-display;
+    }
+  } @else {
+    @if $font-size-condition {
+      @return variable.$font-family-lg-text;
+    } @else {
+      @retrun variable.$font-family-lg-display;
+    }
+  }
+}
