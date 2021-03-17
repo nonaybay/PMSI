@@ -1,0 +1,14 @@
+@use 'functions/typography/font-family' as a;
+@use 'functions/typography/font-size' as b;
+@use 'functions/typography/font-weight' as c;
+@use 'functions/typography/letter-spacing' as d;
+
+body{
+  $x: 17;
+  font-family: a.font-family($x, 'sm');
+  font-family: a.font-family($x, 'lg');
+  font-size: b.font-size($x);
+  font-weight: c.font-weight('regular');
+  letter-spacing: d.letter-spacing($x, 'sm');
+  letter-spacing: d.letter-spacing($x, 'lg');
+}

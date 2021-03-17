@@ -8,30 +8,22 @@
 }
 
 @function letter-spacing($font-size, $breakpoint) {
-  $not-sm: ($breakpoint != 'sm');
-  $not-lg: ($breakpoint != 'lg');
-
-  $error: '`#{$breakpoint}` não é aceito, use `sm` ou `lg`.';
-
-  $is-sm: ($breakpoint == 'sm');
-  $is-lg: ($breakpoint == 'lg');
-  
-  $sm-condition: map.has-key(variable.$tracking-sm, $font-size);
-  $lg-condition: map.has-key(variable.$tracking-lg, $font-size);
-
-  $sm-true: calc-track(map.get(variable.$tracking-sm, $font-size));
-  $lg-true: calc-track(map.get(variable.$tracking-lg, $font-size));
-
-  $all-false: ($font-size - 1);
-
-  $sm-false: letter-spacing($all-false, 'sm');
-  $lg-false: letter-spacing($all-false, 'lg');
-
-  @if $not-sm or $not-lg { @error $error; }
-
-  @if $is-sm {
-    @return if($sm-condition, $sm-true, $sm-false);
-  } @else {
-    @return if($lg-condition, $lg-true, $lg-false);
+  @if ($breakpoint == 'sm') {
+    @if map.has-key(variable.$tracking-sm, $font-size) {
+      @return calc-track(map.get(variable.$tracking-sm, $font-size));
+    } @else {
+      @return letter-spacing(($font-size - 1), 'sm');
+    }
   }
+
+  @if ($breakpoint == 'lg') {
+    @if map.has-key(variable.$tracking-lg, $font-size) {
+      @return calc-track(map.get(variable.$tracking-lg, $font-size));
+    } @else {
+      @return letter-spacing(($font-size - 1), 'sm')
+    }
+  }
+
+  
+  @return normal;
 }
