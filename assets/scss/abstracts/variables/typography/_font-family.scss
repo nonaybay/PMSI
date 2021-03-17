@@ -26,6 +26,7 @@ $-lower-lg-fallback: 'SF Pro Text';
 $-lower-sm-fallback: 'SF Compact Text';
 $-higher-lg-fallback: 'SF Pro Display';
 $-higher-sm-fallback: 'SF Compact Display';
+$-mono-fallback: 'SF Mono';
 
 $font-family-sm-text: $-prefix-fallback, $-lower-sm-fallback, $-basic-fallback, $-suffix-fallback;
 $font-family-sm-display: $-prefix-fallback, $-higher-sm-fallback, $-basic-fallback, $-suffix-fallback;
