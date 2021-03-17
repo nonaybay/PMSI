@@ -4,6 +4,11 @@
 
 
 @function font-family($font-size, $breakpoint) {
+  @if ($breakpoint != 'sm') or ($breakpoint != 'lg') {
+    @error 'O nomes para o ponto de quebra aceitos são [sm] e [lg].';
+    @return false;
+  }
+  
   $font-size-condition: ($font-size <= 19);
   @if ($breakpoint == 'sm') {
     @if $font-size-condition {

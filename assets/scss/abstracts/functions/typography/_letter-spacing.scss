@@ -3,25 +3,35 @@
 @use '../../variables/typography/letter-spacing' as variable;
 
 
-@function letter-spacing($font-size, $breakpoint) {
-  @if ($breakpoint != 'sm') or ($breakpoint != 'lg') {
-    @error 'O nomes para o ponto de quebra aceitos são [sm] e [lg].';
-    @return false;
-  }
+@function calc-track($x) {
+  @return (($x / 1000) * 1em);
+}
 
-  @if ($breakpoint == 'sm') {
-    @if map.has-key(variable.$tracking-sm, $font-size) {
-      @return ((map.get(variable.$tracking-sm, $font-size) / 1000) * 1em);
-    } @else {
-      $font-size: ($font-size - 1);
-      @return letter-spacing($font-size, $breakpoint);
-    }
+@function letter-spacing($font-size, $breakpoint) {
+  $not-sm: ($breakpoint != 'sm');
+  $not-lg: ($breakpoint != 'lg');
+
+  $error: '`#{$breakpoint}` não é aceito, use `sm` ou `lg`.';
+
+  $is-sm: ($breakpoint == 'sm');
+  $is-lg: ($breakpoint == 'lg');
+  
+  $sm-condition: map.has-key(variable.$tracking-sm, $font-size);
+  $lg-condition: map.has-key(variable.$tracking-lg, $font-size);
+
+  $sm-true: calc-track(map.get(variable.$tracking-sm, $font-size));
+  $lg-true: calc-track(map.get(variable.$tracking-lg, $font-size));
+
+  $all-false: ($font-size - 1);
+
+  $sm-false: letter-spacing($all-false, 'sm');
+  $lg-false: letter-spacing($all-false, 'lg');
+
+  @if $not-sm or $not-lg { @error $error; }
+
+  @if $is-sm {
+    @return if($sm-condition, $sm-true, $sm-false);
   } @else {
-    @if map.has-key(variable.$tracking-lg, $font-size) {
-      @return ((map.get(variable.$tracking-lg, $font-size) / 1000) * 1em);
-    } @else {
-      $font-size: ($font-size - 1);
-      @return letter-spacing($font-size, $breakpoint);
-    }
+    @return if($lg-condition, $lg-true, $lg-false);
   }
 }
