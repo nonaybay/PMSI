@@ -1,0 +1,12 @@
+@use 'sass:map';
+
+@use '../../variables/typography/font-weight' as variable;
+
+
+@function font-weight($font-weight-name: 'regular') {
+  $condition: map.has-key(variable.$mapping, $font-weight-name);
+  $true: map.get(variable.$mapping, $font-weight-name);
+  $false: map.get(variable.$mapping, 'regular');
+
+  @return if($condition, $true, $false);
+}
