@@ -16,165 +16,99 @@
 }
 
 html {
-  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4kwallpapers.com%2Fimages%2Fwallpapers%2Fmacos-big-sur-apple-layers-fluidic-colorful-wwdc-stock-2020-3840x2160-1455.jpg&f=1&nofb=1");
+  background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/10/Aesthetic-Photos.jpg");
+  background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/10/Download-wallpaper-hd-space-desktop-dream-aesthetica.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   width: 100%;
-}
-
-body {
-  padding: 22px;
   font-size: 17px;
 }
 
 .button {
   background: none;
-  border: none !important;
-  font: inherit;
+  border: none;
 }
 
 .button {
   font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, serif, system-ui;
-  font-size: 0.8823529412em;
+  font-size: 0.8235294118em;
   font-style: normal;
   font-weight: 500;
-  letter-spacing: -0.016em;
-  line-height: 1.3333333333;
+  letter-spacing: -0.011em;
+  line-height: 1.3571428571;
   cursor: pointer;
-}
-.button * {
-  transition: all 200ms ease;
 }
 
 .button__push {
-  border-color: transparent;
-  border-radius: 0.8em;
-  border-style: solid;
-  border-width: 0.0666666667em;
-  height: 2.8em;
-  line-height: 2.8;
-  max-width: 10em;
+  backdrop-filter: saturate(500%) blur(0.5714285714em);
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 0.5714285714em;
+  box-shadow: 0 0.1428571429em 0.2857142857em -0.0714285714em rgba(28, 28, 30, 0.2), 0 0.2857142857em 0.3571428571em 0 rgba(28, 28, 30, 0.14), 0 0.0714285714em 0.7142857143em 0 rgba(28, 28, 30, 0.12);
+  color: #1c1c1e;
+  max-width: 15.6363636364em;
   overflow: hidden;
-  padding: 0 0.8em;
-  text-align: center;
+  padding: 0.6428571429em 1.2857142857em;
   text-overflow: ellipsis;
+  transition: all 195ms cubic-bezier(0.4, 0, 1, 1);
   white-space: nowrap;
 }
+.button__push:hover {
+  box-shadow: 0 0.2142857143em 0.0714285714em -0.1428571429em rgba(28, 28, 30, 0.2), 0 0.1428571429em 0.1428571429em 0 rgba(28, 28, 30, 0.14), 0 0.0714285714em 0.3571428571em 0 rgba(28, 28, 30, 0.12);
+  transition: all 225ms cubic-bezier(0, 0, 0.2, 1);
+}
 .button__push--global {
-  background-color: #f2f2f7;
-  border-color: #c7c7cc;
-  color: #1c1c1e;
+  background-color: rgba(242, 242, 247, 0.55);
 }
 .button__push--global:hover {
-  background-color: #e1e1e6;
+  background-color: rgba(182, 182, 186, 0.6085);
 }
-.button__push--default, .button__pull-down label::after {
-  background-color: #007aff;
-  border-color: #0272ed;
+.button__push--default {
+  background-color: rgba(0, 122, 255, 0.55);
   color: #f2f2f7;
 }
-.button__push--default:hover, .button__pull-down label:hover::after {
-  background-color: #0272ed;
+.button__push--default:hover {
+  background-color: rgba(8, 95, 191, 0.6085);
 }
-.button__pull-down {
-  display: block;
-  margin: auto;
-  max-width: 320px;
-  padding: 0;
-  width: auto;
-  overflow: hidden;
-  border-radius: 0;
-}
-.button__pull-down label {
-  border-radius: 0.8em;
-  display: flex;
-  height: 34px;
-  max-width: none;
-  padding: 0;
-  width: auto;
-  justify-content: space-between;
-}
-.button__pull-down label::before {
-  content: attr(data-label);
-  height: 34px;
-  font-weight: 600;
-  padding-left: 13px;
-  text-align: left;
-  text-transform: uppercase;
-  width: auto;
-}
-.button__pull-down label::after {
-  content: "";
-  font-family: "Material Icons";
-  font-size: 21px;
-  height: 34px;
-  line-height: 34px;
-  padding: 0;
-  text-align: center;
-  vertical-align: text-bottom;
-  width: 34px;
-}
-.button__pull-down nav {
-  border-radius: 0.8em;
-  display: block;
-  position: relative;
-  backdrop-filter: saturate(180%) blur(21px);
-  background-color: rgba(242, 242, 247, 0.55);
-  overflow: hidden;
-  width: auto;
-  height: 3px;
-  top: -16px;
-  z-index: -1;
-  transition: all 165ms ease;
-}
-.button__pull-down nav ul {
-  background: none;
-  border-radius: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  margin-top: 0;
-  overflow: hidden;
-  padding: 12px;
-  width: auto;
-}
-.button__pull-down nav ul li {
+.button__help {
   font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, serif, system-ui;
-  font-size: 1em;
+  font-size: 0.8235294118em;
   font-style: normal;
   font-weight: 400;
-  letter-spacing: -0.026em;
-  line-height: 1.2941176471;
+  letter-spacing: -0.011em;
+  line-height: 1.3571428571;
+  background-color: white;
+  background-color: #007aff;
+  border-radius: 1em;
+  color: #007aff;
+  color: white;
   display: block;
+  font-family: "Material Icons";
+  height: 2em;
+  width: 2em;
+  padding: 0;
 }
-.button__pull-down nav ul li:not(:first-of-type)::before {
-  background: rgba(0, 0, 0, 0.34);
-  content: "";
+.button__help::before {
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, serif, system-ui;
+  font-size: 1.6470588235em;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.014em;
+  line-height: 1.2142857143;
+  content: "";
   display: block;
-  height: 1px;
-  width: 100%;
+  font-family: inherit;
+  font-size: 2em;
+  height: 1em;
+  line-height: 1em;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+  width: 1em;
 }
-.button__pull-down nav ul li a {
-  color: #1c1c1e;
-  display: block;
-  font: inherit;
-  padding: 7px 0;
-  text-decoration: none;
-}
-.button__enabler:checked ~ .button__pull-down label {
-  border-radius: 0.8em 0.8em 0 0;
-}
-.button__enabler:checked ~ .button__pull-down nav {
-  border-radius: 0 0 0.8em 0.8em;
-  top: 0;
-  height: auto;
-  transition: top 165ms ease;
-}
-
-section {
-  display: block;
-  width: 100%;
+.button__help:hover {
+  background-color: white;
+  color: #007aff;
 }
 
 /*# sourceMappingURL=index.css.map */
