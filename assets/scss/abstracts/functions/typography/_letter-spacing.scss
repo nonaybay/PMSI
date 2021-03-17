@@ -1,10 +1,16 @@
 @use 'sass:map';
+@use 'sass:math';
 
 @use '../../variables/typography/letter-spacing' as variable;
 
 
 @function calc-track($x) {
-  @return (($x / 1000) * 1em);
+  $x: ($x / 1000);
+  $e: math.pow(10, 13);
+  $x: math.round($x * $e) / $e;
+  
+  @debug $x;
+  @return $x * 1em;
 }
 
 @function letter-spacing($font-size, $breakpoint) {
@@ -20,7 +26,7 @@
     @if map.has-key(variable.$tracking-lg, $font-size) {
       @return calc-track(map.get(variable.$tracking-lg, $font-size));
     } @else {
-      @return letter-spacing(($font-size - 1), 'sm')
+      @return letter-spacing(($font-size - 1), 'lg')
     }
   }
 
