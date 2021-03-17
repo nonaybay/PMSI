@@ -1,0 +1,23 @@
+@function line-height($font-size) {
+  // $p* -> plus-value
+  // $c* -> condition-value
+
+  $p2: (($font-size + 2) / $font-size);
+  $p4: (($font-size + 4) / $font-size);
+  $p5: (($font-size + 5) / $font-size);
+  $p6: (($font-size + 6) / $font-size);
+  $p7: (($font-size + 7) / $font-size);
+  $p8: (($font-size + 8) / $font-size);
+  $p9: (($font-size + 9) / $font-size);
+  $p10: (($font-size + 10) / $font-size);
+
+  $c2: ($font-size <= 11);
+  $c4: ($font-size == 12);
+  $c5: (($font-size >= 13) and ($font-size <= 21));
+  $c6: (($font-size >= 22) and ($font-size <= 29));
+  $c7: (($font-size >= 30) and ($font-size <= 37));
+  $c8: (($font-size >= 38) and ($font-size <= 45));
+  $c9: (($font-size >= 46) and ($font-size <= 53));
+
+  @return if($c2, $p2, if($c4, $p4, if($c5, $p5, if($c6, $p6, if($c7, $p7, if($c8, $p8, if($c9, $p9, $p10)))))));
+}
