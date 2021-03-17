@@ -1,0 +1,115 @@
+* {
+  border: none;
+  box-sizing: border-box;
+  font: inherit;
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
+*::before, *::after {
+  box-sizing: inherit;
+}
+
+:root {
+  font-size: 17px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Compact Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0.022em;
+  line-height: 1.2941176471;
+}
+@media screen and (min-width: 640px) {
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Pro Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    letter-spacing: -0.026em;
+  }
+}
+
+h1 {
+  font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Compact Display", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+  font-size: 3.5294117647em;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+  line-height: 1.1666666667;
+}
+@media screen and (min-width: 640px) {
+  h1 {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Pro Display", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    letter-spacing: 0.004em;
+  }
+}
+
+h2 {
+  font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Compact Display", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+  font-size: 3.1176470588em;
+  font-weight: 600;
+  letter-spacing: 0.006em;
+  line-height: 1.1698113208;
+}
+@media screen and (min-width: 640px) {
+  h2 {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Pro Display", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    letter-spacing: 0.006em;
+  }
+}
+
+h3 {
+  font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Compact Display", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+  font-size: 2.5882352941em;
+  font-weight: 600;
+  letter-spacing: 0.008em;
+  line-height: 1.1818181818;
+}
+@media screen and (min-width: 640px) {
+  h3 {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Pro Display", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    letter-spacing: 0.008em;
+  }
+}
+
+h4 {
+  font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Compact Display", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+  font-size: 2.1764705882em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.1891891892;
+}
+@media screen and (min-width: 640px) {
+  h4 {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Pro Display", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    letter-spacing: 0.01em;
+  }
+}
+
+h5 {
+  font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Compact Display", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+  font-size: 1.6470588235em;
+  font-weight: 600;
+  letter-spacing: 0.013em;
+  line-height: 1.2142857143;
+}
+@media screen and (min-width: 640px) {
+  h5 {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Pro Display", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    letter-spacing: 0.014em;
+  }
+}
+
+h6 {
+  font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Compact Display", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+  font-size: 1.2941176471em;
+  font-weight: 600;
+  letter-spacing: 0.016em;
+  line-height: 1.2727272727;
+}
+@media screen and (min-width: 640px) {
+  h6 {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Pro Display", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    letter-spacing: -0.012em;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

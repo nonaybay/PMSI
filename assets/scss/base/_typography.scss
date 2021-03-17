@@ -1,0 +1,16 @@
+@use '../abstracts/variables/typography/font-size' as root;
+@use '../abstracts/mixins/typography/index' as font;
+
+
+:root {
+    font-size: (root.$font-size-root * 1px);
+}
+
+body {@include font.typography(17, 'regular');}
+h1 {@include font.typography(60, 'semibold');}
+h2 {@include font.typography(53, 'semibold');}
+h3 {@include font.typography(44, 'semibold');}
+h4 {@include font.typography(37, 'semibold');}
+h5 {@include font.typography(28, 'semibold');}
+h6 {@include font.typography(22, 'semibold');}
+

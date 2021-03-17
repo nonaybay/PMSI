@@ -1,0 +1,14 @@
+* {
+    border: none;
+    box-sizing: border-box;
+    font: inherit;
+    margin: 0;
+    outline: none;
+    padding: 0;
+
+    &::before,
+    &::after {
+        box-sizing: inherit;
+    }
+}
+
