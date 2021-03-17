@@ -1,0 +1,21 @@
+@use '../../variables/breakpoints/index' as breakpoint;
+
+@use '../../functions/typography/font-family' as font-family;
+@use '../../functions/typography/font-size' as font-size;
+@use '../../functions/typography/font-weight' as font-weight;
+@use '../../functions/typography/letter-spacing' as letter-spacing;
+@use '../../functions/typography/line-height' as line-height;
+
+
+@mixin typography($font-size, $font-weight) {
+  font-family: font-family.font-family($font-size, 'sm');
+  font-size: font-size.font-size($font-size);
+  font-weight: font-weight.font-weight($font-weight);
+  letter-spacing: letter-spacing.letter-spacing($font-size, 'sm');
+  line-height: line-height.line-height($font-size);
+
+  @media screen and (min-width: $breakpoint-lg) {
+    font-family: font-family.font-family($font-size, 'lg');
+    letter-spacing: letter-spacing.letter-spacing($font-size, 'lg');
+  }
+}
