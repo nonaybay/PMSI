@@ -1,0 +1,410 @@
+/*****************************************************************************
+ *                                                                           *                                     
+ *  Esta folha de estilo tem como objetivo, resetar todas as tags do html    *
+ *                                                                           *
+ *****************************************************************************/
+
+
+
+html {
+    display: block;
+    overflow-x: hidden;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+
+%default_typography {
+    font: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+    text-align: left;
+    text-align: inherit;
+    text-decoration: none;
+}
+
+
+
+body {
+    @extend html;
+    @extend %default_typography;
+
+    margin: 0;
+}
+
+
+
+a {
+    @extend %default_typography;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    &:link,
+    &:visited,
+    &:hover,
+    &:focus {
+        @extend a;
+
+        &:active,
+        &:disabled {
+            @extend a;
+        }
+    }
+}
+
+
+
+abbr {
+    @extend a;
+    @extend %default_typography;
+
+    cursor: inherit;
+    display: inline;
+}
+
+
+
+address {
+    @extend html;
+    @extend %default_typography;
+}
+
+
+
+area { display: none; }
+
+
+
+article { @extend body; }
+
+
+
+aside { @extend article; }
+
+
+
+audio { @extend area; }
+
+
+
+b { @extend %default_typography; }
+
+
+
+blockquote { @extend body; }
+
+
+
+button {
+    @extend a;
+
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+
+
+canvas {
+    @extend body;
+
+    height: auto;
+    width: auto;
+}
+
+
+
+caption {
+    @extend %default_typography;
+
+    display: table_caption;
+}
+
+
+
+cite { @extend address; }
+
+
+
+code {
+    @extend body;
+    @extend button;
+}
+
+
+
+datalist { @extend cite; }
+
+
+
+dd { @extend body; }
+
+
+
+del { @extend %default_typography; }
+
+
+
+details { @extend body; }
+
+
+
+dfn { @extend cite; }
+
+
+
+div { @extend body; }
+
+
+
+dl { @extend dd; }
+
+
+
+dt {
+    @extend dl;
+    @extend body;
+}
+
+
+
+em { @extend cite; }
+
+
+
+embed {
+    @extend body;
+    @extend area;
+}
+
+
+
+fieldset {
+    @extend body;
+    @extend button;
+}
+
+
+
+figcaption { @extend body; }
+
+
+
+figure { @extend figcaption; }
+
+
+
+footer { @extend div; }
+
+
+
+form { @extend div; }
+
+
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        @extend body;
+    }
+}
+
+
+
+head { @extend area; }
+
+
+
+header { @extend div; }
+
+
+
+hr {
+    @extend body;
+    @extend button;
+}
+
+
+
+i { @extend cite; }
+
+
+
+iframe { @extend body; }
+
+
+
+img {
+    @extend canvas;
+
+    max-width: 100%;
+}
+
+
+
+input { @extend button; }
+
+
+
+ins { @extend del; }
+
+
+
+kbd { @extend code; }
+
+
+
+label { @extend abbr; }
+
+
+
+legend {
+    @extend body;
+    @extend button;
+}
+
+
+
+li {
+    @extend %default_typography;
+
+    display: list-item;
+}
+
+
+
+link { @extend area; }
+
+
+
+main { @extend div; }
+
+
+
+map { @extend abbr; }
+
+
+
+mark {
+    @extend button;
+
+    cursor: inherit;
+}
+
+
+
+nav { @extend div; }
+
+
+
+ol {
+    @extend body;
+
+    list-style: none;
+    padding: 0;
+}
+
+
+
+output { @extend abbr; }
+
+
+
+p {
+    @extend body;
+}
+
+
+
+param { @extend area; }
+
+
+
+pre {
+    @extend body;
+    @extend code;
+    @extend mark;
+}
+
+
+
+q {
+    @extend abbr;
+
+    &:before,
+    &::before,
+    &:after,
+    &::after {
+        content: '';
+    }
+}
+
+
+
+s { @extend del; }
+
+
+
+samp { @extend code; }
+
+
+
+section { @extend div; }
+
+
+
+small { @extend p; }
+
+
+
+span { @extend abbr; }
+
+
+
+strong { @extend span; }
+
+
+
+sub {
+    @extend small;
+
+    vertical-align: baseline;
+}
+
+
+
+sup { @extend sub; }
+
+
+
+summary { @extend div; }
+
+
+
+svg { @extend img; }
+
+
+
+table {
+    @extend body;
+    @extend button;
+    @extend mark;
+}
+
+
+
+tbody {
+    @extend table;
+    @extend sub;
+}
+
+
+
+textarea { @extend input; }
+
+
+
+ul { @extend ol; }

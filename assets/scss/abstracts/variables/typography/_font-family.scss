@@ -1,0 +1,31 @@
+$-macosx-elcapitan: 'San Francisco';
+$-macosx-yosemite: 'Helvetica Neue';
+$-macosx-mavericks: 'Lucida Grande';
+$-windows-vista: 'Segoe UI';
+$-windows-xp: 'Tahoma';
+$-windows-me: 'Microsoft Sans Serif';
+$-linux-android-i: 'Roboto';
+$-linux-android-c: 'Droid Sans';
+$-linux-ubuntu: 'Ubuntu';
+$-linux-gnome: 'Cantarell';
+$-linux-kde: 'Noto Sans';
+
+$-macosx-fallback: $-macosx-elcapitan, $-macosx-yosemite, $-macosx-mavericks;
+$-windows-fallback: $-windows-vista, $-windows-xp, $-windows-me;
+$-linux-fallback: $-linux-android-i, $-linux-android-c, $-linux-ubuntu, $-linux-gnome, $-linux-kde;
+$-symbols-fallback: 'SF Pro Icons', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Material Icons';
+
+$-basic-fallback: $-macosx-fallback, $-windows-fallback, $-linux-fallback, $-symbols-fallback;
+$-prefix-fallback: -apple-system, BlinkMacSystemFont, X-LocaleSpecific;
+$-suffix-fallback: sans-serif, system-ui;
+
+$-basic-mono-fallback: 'Menlo', 'Monaco', 'Consolas', 'Roboto Mono', 'Ubuntu Mono', 'DejaVu Sans Mono', 'Hack';
+$-suffix-mono-fallback: monospace, $-basic-fallback, $-suffix-fallback;
+
+$-lower-fallback: 'SF Pro Text';
+$-higher-fallback: 'SF Pro Display';
+$-mono-fallback: 'SF Mono';
+
+$font-family-text: $-prefix-fallback, $-lower-fallback, $-basic-fallback, $-suffix-fallback;
+$font-family-display: $-prefix-fallback, $-higher-fallback, $-basic-fallback, $-suffix-fallback;
+$font-family-mono: $-mono-fallback, $-basic-mono-fallback, $-suffix-mono-fallback;

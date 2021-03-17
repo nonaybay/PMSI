@@ -1,0 +1,183 @@
+@charset "UTF-8";
+* {
+  border: none;
+  box-sizing: border-box;
+  font: inherit;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga";
+}
+*::before, *::after {
+  box-sizing: inherit;
+}
+
+/*****************************************************************************
+ *                                                                           *                                     
+ *  Esta folha de estilo tem como objetivo, resetar todas as tags do html    *
+ *                                                                           *
+ *****************************************************************************/
+html, address, cite, i, em, dfn, datalist, body, table, tbody, pre, p, small, sub, sup, ol, ul, legend, iframe, hr, h6, h5, h4, h3, h2, h1, figcaption, figure, fieldset, embed, div, summary, section, nav, main, header, form, footer, details, dd, dl, dt, code, samp, kbd, canvas, img, svg, blockquote, article, aside {
+  display: block;
+  overflow-x: hidden;
+}
+html:focus, address:focus, cite:focus, i:focus, em:focus, dfn:focus, datalist:focus, body:focus, table:focus, tbody:focus, pre:focus, p:focus, small:focus, sub:focus, sup:focus, ol:focus, ul:focus, legend:focus, iframe:focus, hr:focus, h6:focus, h5:focus, h4:focus, h3:focus, h2:focus, h1:focus, figcaption:focus, figure:focus, fieldset:focus, embed:focus, div:focus, summary:focus, section:focus, nav:focus, main:focus, header:focus, form:focus, footer:focus, details:focus, dd:focus, dl:focus, dt:focus, code:focus, samp:focus, kbd:focus, canvas:focus, img:focus, svg:focus, blockquote:focus, article:focus, aside:focus {
+  outline: none;
+}
+
+li, del, s, ins, caption, b, address, cite, i, em, dfn, datalist, a, button, table, tbody, mark, table, tbody, pre, legend, input, textarea, hr, fieldset, code, samp, pre, kbd, button:link, table:link, tbody:link, mark:link, table:link, tbody:link, pre:link, legend:link, input:link, textarea:link, hr:link, fieldset:link, code:link, samp:link, pre:link, kbd:link, button:visited, table:visited, tbody:visited, mark:visited, table:visited, tbody:visited, pre:visited, legend:visited, input:visited, textarea:visited, hr:visited, fieldset:visited, code:visited, samp:visited, pre:visited, kbd:visited, button:hover, table:hover, tbody:hover, mark:hover, table:hover, tbody:hover, pre:hover, legend:hover, input:hover, textarea:hover, hr:hover, fieldset:hover, code:hover, samp:hover, pre:hover, kbd:hover, button:focus, table:focus, tbody:focus, mark:focus, table:focus, tbody:focus, pre:focus, legend:focus, input:focus, textarea:focus, hr:focus, fieldset:focus, code:focus, samp:focus, pre:focus, kbd:focus, button:link:active, table:link:active, tbody:link:active, mark:link:active, table:link:active, tbody:link:active, pre:link:active, legend:link:active, input:link:active, textarea:link:active, hr:link:active, fieldset:link:active, code:link:active, samp:link:active, pre:link:active, kbd:link:active, button:link:disabled, table:link:disabled, tbody:link:disabled, mark:link:disabled, table:link:disabled, tbody:link:disabled, pre:link:disabled, legend:link:disabled, input:link:disabled, textarea:link:disabled, hr:link:disabled, fieldset:link:disabled, code:link:disabled, samp:link:disabled, pre:link:disabled, kbd:link:disabled, button:visited:active, table:visited:active, tbody:visited:active, mark:visited:active, table:visited:active, tbody:visited:active, pre:visited:active, legend:visited:active, input:visited:active, textarea:visited:active, hr:visited:active, fieldset:visited:active, code:visited:active, samp:visited:active, pre:visited:active, kbd:visited:active, button:visited:disabled, table:visited:disabled, tbody:visited:disabled, mark:visited:disabled, table:visited:disabled, tbody:visited:disabled, pre:visited:disabled, legend:visited:disabled, input:visited:disabled, textarea:visited:disabled, hr:visited:disabled, fieldset:visited:disabled, code:visited:disabled, samp:visited:disabled, pre:visited:disabled, kbd:visited:disabled, button:hover:active, table:hover:active, tbody:hover:active, mark:hover:active, table:hover:active, tbody:hover:active, pre:hover:active, legend:hover:active, input:hover:active, textarea:hover:active, hr:hover:active, fieldset:hover:active, code:hover:active, samp:hover:active, pre:hover:active, kbd:hover:active, button:hover:disabled, table:hover:disabled, tbody:hover:disabled, mark:hover:disabled, table:hover:disabled, tbody:hover:disabled, pre:hover:disabled, legend:hover:disabled, input:hover:disabled, textarea:hover:disabled, hr:hover:disabled, fieldset:hover:disabled, code:hover:disabled, samp:hover:disabled, pre:hover:disabled, kbd:hover:disabled, button:focus:active, table:focus:active, tbody:focus:active, mark:focus:active, table:focus:active, tbody:focus:active, pre:focus:active, legend:focus:active, input:focus:active, textarea:focus:active, hr:focus:active, fieldset:focus:active, code:focus:active, samp:focus:active, pre:focus:active, kbd:focus:active, button:focus:disabled, table:focus:disabled, tbody:focus:disabled, mark:focus:disabled, table:focus:disabled, tbody:focus:disabled, pre:focus:disabled, legend:focus:disabled, input:focus:disabled, textarea:focus:disabled, hr:focus:disabled, fieldset:focus:disabled, code:focus:disabled, samp:focus:disabled, pre:focus:disabled, kbd:focus:disabled, abbr, span, strong, q, output, map, label, abbr:link, span:link, strong:link, q:link, output:link, map:link, label:link, abbr:visited, span:visited, strong:visited, q:visited, output:visited, map:visited, label:visited, abbr:hover, span:hover, strong:hover, q:hover, output:hover, map:hover, label:hover, abbr:focus, span:focus, strong:focus, q:focus, output:focus, map:focus, label:focus, abbr:link:active, span:link:active, strong:link:active, q:link:active, output:link:active, map:link:active, label:link:active, abbr:link:disabled, span:link:disabled, strong:link:disabled, q:link:disabled, output:link:disabled, map:link:disabled, label:link:disabled, abbr:visited:active, span:visited:active, strong:visited:active, q:visited:active, output:visited:active, map:visited:active, label:visited:active, abbr:visited:disabled, span:visited:disabled, strong:visited:disabled, q:visited:disabled, output:visited:disabled, map:visited:disabled, label:visited:disabled, abbr:hover:active, span:hover:active, strong:hover:active, q:hover:active, output:hover:active, map:hover:active, label:hover:active, abbr:hover:disabled, span:hover:disabled, strong:hover:disabled, q:hover:disabled, output:hover:disabled, map:hover:disabled, label:hover:disabled, abbr:focus:active, span:focus:active, strong:focus:active, q:focus:active, output:focus:active, map:focus:active, label:focus:active, abbr:focus:disabled, span:focus:disabled, strong:focus:disabled, q:focus:disabled, output:focus:disabled, map:focus:disabled, label:focus:disabled, a:link:active, a:link:disabled, a:visited:active, a:visited:disabled, a:hover:active, a:hover:disabled, a:focus:active, a:focus:disabled, a:link, a:visited, a:hover, a:focus, body, table, tbody, pre, p, small, sub, tbody, sup, ol, ul, legend, iframe, hr, h6, h5, h4, h3, h2, h1, figcaption, figure, embed, div, summary, section, nav, main, header, form, footer, details, dd, dl, dt, canvas, img, svg, blockquote, article, aside {
+  font: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  text-align: left;
+  text-align: inherit;
+  text-decoration: none;
+}
+
+body, table, tbody, pre, p, small, sub, sup, ol, ul, legend, iframe, hr, h6, h5, h4, h3, h2, h1, figcaption, figure, fieldset, embed, div, summary, section, nav, main, header, form, footer, details, dd, dl, dt, code, samp, kbd, canvas, img, svg, blockquote, article, aside {
+  margin: 0;
+}
+
+a, button, table, tbody, mark, table, tbody, pre, legend, input, textarea, hr, fieldset, code, samp, pre, kbd, button:link, table:link, tbody:link, mark:link, table:link, tbody:link, pre:link, legend:link, input:link, textarea:link, hr:link, fieldset:link, code:link, samp:link, pre:link, kbd:link, button:visited, table:visited, tbody:visited, mark:visited, table:visited, tbody:visited, pre:visited, legend:visited, input:visited, textarea:visited, hr:visited, fieldset:visited, code:visited, samp:visited, pre:visited, kbd:visited, button:hover, table:hover, tbody:hover, mark:hover, table:hover, tbody:hover, pre:hover, legend:hover, input:hover, textarea:hover, hr:hover, fieldset:hover, code:hover, samp:hover, pre:hover, kbd:hover, button:focus, table:focus, tbody:focus, mark:focus, table:focus, tbody:focus, pre:focus, legend:focus, input:focus, textarea:focus, hr:focus, fieldset:focus, code:focus, samp:focus, pre:focus, kbd:focus, button:link:active, table:link:active, tbody:link:active, mark:link:active, table:link:active, tbody:link:active, pre:link:active, legend:link:active, input:link:active, textarea:link:active, hr:link:active, fieldset:link:active, code:link:active, samp:link:active, pre:link:active, kbd:link:active, button:link:disabled, table:link:disabled, tbody:link:disabled, mark:link:disabled, table:link:disabled, tbody:link:disabled, pre:link:disabled, legend:link:disabled, input:link:disabled, textarea:link:disabled, hr:link:disabled, fieldset:link:disabled, code:link:disabled, samp:link:disabled, pre:link:disabled, kbd:link:disabled, button:visited:active, table:visited:active, tbody:visited:active, mark:visited:active, table:visited:active, tbody:visited:active, pre:visited:active, legend:visited:active, input:visited:active, textarea:visited:active, hr:visited:active, fieldset:visited:active, code:visited:active, samp:visited:active, pre:visited:active, kbd:visited:active, button:visited:disabled, table:visited:disabled, tbody:visited:disabled, mark:visited:disabled, table:visited:disabled, tbody:visited:disabled, pre:visited:disabled, legend:visited:disabled, input:visited:disabled, textarea:visited:disabled, hr:visited:disabled, fieldset:visited:disabled, code:visited:disabled, samp:visited:disabled, pre:visited:disabled, kbd:visited:disabled, button:hover:active, table:hover:active, tbody:hover:active, mark:hover:active, table:hover:active, tbody:hover:active, pre:hover:active, legend:hover:active, input:hover:active, textarea:hover:active, hr:hover:active, fieldset:hover:active, code:hover:active, samp:hover:active, pre:hover:active, kbd:hover:active, button:hover:disabled, table:hover:disabled, tbody:hover:disabled, mark:hover:disabled, table:hover:disabled, tbody:hover:disabled, pre:hover:disabled, legend:hover:disabled, input:hover:disabled, textarea:hover:disabled, hr:hover:disabled, fieldset:hover:disabled, code:hover:disabled, samp:hover:disabled, pre:hover:disabled, kbd:hover:disabled, button:focus:active, table:focus:active, tbody:focus:active, mark:focus:active, table:focus:active, tbody:focus:active, pre:focus:active, legend:focus:active, input:focus:active, textarea:focus:active, hr:focus:active, fieldset:focus:active, code:focus:active, samp:focus:active, pre:focus:active, kbd:focus:active, button:focus:disabled, table:focus:disabled, tbody:focus:disabled, mark:focus:disabled, table:focus:disabled, tbody:focus:disabled, pre:focus:disabled, legend:focus:disabled, input:focus:disabled, textarea:focus:disabled, hr:focus:disabled, fieldset:focus:disabled, code:focus:disabled, samp:focus:disabled, pre:focus:disabled, kbd:focus:disabled, abbr, span, strong, q, output, map, label, abbr:link, span:link, strong:link, q:link, output:link, map:link, label:link, abbr:visited, span:visited, strong:visited, q:visited, output:visited, map:visited, label:visited, abbr:hover, span:hover, strong:hover, q:hover, output:hover, map:hover, label:hover, abbr:focus, span:focus, strong:focus, q:focus, output:focus, map:focus, label:focus, abbr:link:active, span:link:active, strong:link:active, q:link:active, output:link:active, map:link:active, label:link:active, abbr:link:disabled, span:link:disabled, strong:link:disabled, q:link:disabled, output:link:disabled, map:link:disabled, label:link:disabled, abbr:visited:active, span:visited:active, strong:visited:active, q:visited:active, output:visited:active, map:visited:active, label:visited:active, abbr:visited:disabled, span:visited:disabled, strong:visited:disabled, q:visited:disabled, output:visited:disabled, map:visited:disabled, label:visited:disabled, abbr:hover:active, span:hover:active, strong:hover:active, q:hover:active, output:hover:active, map:hover:active, label:hover:active, abbr:hover:disabled, span:hover:disabled, strong:hover:disabled, q:hover:disabled, output:hover:disabled, map:hover:disabled, label:hover:disabled, abbr:focus:active, span:focus:active, strong:focus:active, q:focus:active, output:focus:active, map:focus:active, label:focus:active, abbr:focus:disabled, span:focus:disabled, strong:focus:disabled, q:focus:disabled, output:focus:disabled, map:focus:disabled, label:focus:disabled, a:link:active, a:link:disabled, a:visited:active, a:visited:disabled, a:hover:active, a:hover:disabled, a:focus:active, a:focus:disabled, a:link, a:visited, a:hover, a:focus {
+  cursor: pointer;
+  text-decoration: none;
+}
+abbr, span, strong, q, output, map, label {
+  cursor: inherit;
+  display: inline;
+}
+
+area, param, link, head, embed, audio {
+  display: none;
+}
+
+button, table, tbody, mark, pre, legend, input, textarea, hr, fieldset, code, samp, kbd {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+canvas, img, svg {
+  height: auto;
+  width: auto;
+}
+
+caption {
+  display: table_caption;
+}
+
+img, svg {
+  max-width: 100%;
+}
+
+li {
+  display: list-item;
+}
+
+mark, table, tbody, pre {
+  cursor: inherit;
+}
+
+ol, ul {
+  list-style: none;
+  padding: 0;
+}
+
+q:before, q::before, q:after, q::after {
+  content: "";
+}
+
+sub, tbody, sup {
+  vertical-align: baseline;
+}
+
+.button {
+  background: none;
+  border: none;
+}
+
+.button {
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, serif, system-ui;
+  font-size: 0.8235294118em;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.011em;
+  line-height: 1.3571428571;
+  cursor: pointer;
+}
+
+.button__push {
+  backdrop-filter: saturate(500%) blur(0.5714285714em);
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 0.5714285714em;
+  box-shadow: 0 0.1428571429em 0.2857142857em -0.0714285714em rgba(28, 28, 30, 0.2), 0 0.2857142857em 0.3571428571em 0 rgba(28, 28, 30, 0.14), 0 0.0714285714em 0.7142857143em 0 rgba(28, 28, 30, 0.12);
+  color: #1c1c1e;
+  max-width: 15.6363636364em;
+  overflow: hidden;
+  padding: 0.6428571429em 1.2857142857em;
+  text-overflow: ellipsis;
+  transition: all 195ms cubic-bezier(0.4, 0, 1, 1);
+  white-space: nowrap;
+}
+.button__push:hover {
+  box-shadow: 0 0.2142857143em 0.0714285714em -0.1428571429em rgba(28, 28, 30, 0.2), 0 0.1428571429em 0.1428571429em 0 rgba(28, 28, 30, 0.14), 0 0.0714285714em 0.3571428571em 0 rgba(28, 28, 30, 0.12);
+  transition: all 225ms cubic-bezier(0, 0, 0.2, 1);
+}
+.button__push--global {
+  background-color: rgba(242, 242, 247, 0.55);
+}
+.button__push--global:hover {
+  background-color: rgba(182, 182, 186, 0.6085);
+}
+.button__push--default {
+  background-color: rgba(0, 122, 255, 0.55);
+  color: #f2f2f7;
+}
+.button__push--default:hover {
+  background-color: rgba(8, 95, 191, 0.6085);
+}
+.button__help {
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, serif, system-ui;
+  font-size: 0.8235294118em;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.011em;
+  line-height: 1.3571428571;
+  background-color: white;
+  background-color: #007aff;
+  border-radius: 1em;
+  color: #007aff;
+  color: white;
+  display: block;
+  font-family: "Material Icons";
+  height: 2em;
+  width: 2em;
+  padding: 0;
+}
+.button__help::before {
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, serif, system-ui;
+  font-size: 1.6470588235em;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.014em;
+  line-height: 1.2142857143;
+  content: "";
+  display: block;
+  font-family: inherit;
+  font-size: 2em;
+  height: 1em;
+  line-height: 1em;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+  width: 1em;
+}
+.button__help:hover {
+  background-color: white;
+  color: #007aff;
+}
+
+/*# sourceMappingURL=index.css.map */
