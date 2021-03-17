@@ -14,7 +14,7 @@
   letter-spacing: letter-spacing.letter-spacing($font-size, 'sm');
   line-height: line-height.line-height($font-size);
 
-  @media screen and (min-width: $breakpoint-lg) {
+  @media screen and (min-width: breakpoint.$breakpoint-lg) {
     font-family: font-family.font-family($font-size, 'lg');
     letter-spacing: letter-spacing.letter-spacing($font-size, 'lg');
   }
