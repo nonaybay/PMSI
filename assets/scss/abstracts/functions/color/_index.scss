@@ -1,0 +1,31 @@
+@use 'sass:map';
+
+@use '../../variables/color/common' as common;
+@use '../../variables/color/gray' as gray;
+@use '../../variables/color/colored' as colored;
+
+
+@function get-gray($tone, $key) {
+  @if ($tone == 'light') {
+    @if map.has-key(gray.$light, $key) {
+      @return map.get(gray.$light, $key);
+    } @else {
+      @return map.get(gray.$light, 1);
+    }
+  } @else {
+    @if map.has-key(gray.$dark, $key) {
+      @return map.get(gray.$dark, $key);
+    } @else {
+      @return map.get(gray.$dark, 1);
+    }
+  }
+}
+
+
+@function get-color($color-name) {
+  @if map.has-key(colored.$colored, $color-name) {
+    @return map.get(colored.$colored, $color-name);
+  } @else {
+    @return get-gray('light', 1);
+  }
+}
