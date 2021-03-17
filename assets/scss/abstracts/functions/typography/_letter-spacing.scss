@@ -1,0 +1,27 @@
+@use 'sass:map';
+
+@use '../../variables/typography/letter-spacing' as variable;
+
+
+@function letter-spacing($font-size, $breakpoint) {
+  @if ($breakpoint != 'sm') or ($breakpoint != 'lg') {
+    @error 'O nomes para o ponto de quebra aceitos são [sm] e [lg].';
+    @return false;
+  }
+
+  @if ($breakpoint == 'sm') {
+    @if map.has-key(variable.$tracking-sm, $font-size) {
+      @return ((map.get(variable.$tracking-sm, $font-size) / 1000) * 1em);
+    } @else {
+      $font-size: ($font-size - 1);
+      @return letter-spacing($font-size, $breakpoint);
+    }
+  } @else {
+    @if map.has-key(variable.$tracking-lg, $font-size) {
+      @return ((map.get(variable.$tracking-lg, $font-size) / 1000) * 1em);
+    } @else {
+      $font-size: ($font-size - 1);
+      @return letter-spacing($font-size, $breakpoint);
+    }
+  }
+}
