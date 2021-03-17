@@ -22,10 +22,13 @@ $-suffix-fallback: sans-serif, system-ui;
 $-basic-mono-fallback: 'JetBrains Mono', 'Fira Code', 'Menlo', 'Monaco', 'Consolas', 'Roboto Mono', 'Ubuntu Mono', 'DejaVu Sans Mono', 'Hack';
 $-suffix-mono-fallback: monospace, $-basic-fallback, $-suffix-fallback;
 
-$-lower-fallback: 'SF Pro Text';
-$-higher-fallback: 'SF Pro Display';
-$-mono-fallback: 'SF Mono';
+$-lower-lg-fallback: 'SF Pro Text';
+$-lower-sm-fallback: 'SF Compact Text';
+$-higher-lg-fallback: 'SF Pro Display';
+$-higher-sm-fallback: 'SF Compact Display';
 
-$font-family-text: $-prefix-fallback, $-lower-fallback, $-basic-fallback, $-suffix-fallback;
-$font-family-display: $-prefix-fallback, $-higher-fallback, $-basic-fallback, $-suffix-fallback;
+$font-family-sm-text: $-prefix-fallback, $-lower-sm-fallback, $-basic-fallback, $-suffix-fallback;
+$font-family-sm-display: $-prefix-fallback, $-higher-sm-fallback, $-basic-fallback, $-suffix-fallback;
+$font-family-lg-text: $-prefix-fallback, $-lower-lg-fallback, $-basic-fallback, $-suffix-fallback;
+$font-family-lg-display: $-prefix-fallback, $-higher-lg-fallback, $-basic-fallback, $-suffix-fallback;
 $font-family-mono: $-mono-fallback, $-basic-mono-fallback, $-suffix-mono-fallback;
