@@ -1,0 +1,6 @@
+@use '../../variables/typography/font-size' as variable;
+
+
+@function font-size($font-size) {
+  @return (($font-size / variable.$font-size-root) * 1em);
+}

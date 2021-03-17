@@ -15,7 +15,7 @@
     @if $font-size-condition {
       @return variable.$font-family-lg-text;
     } @else {
-      @retrun variable.$font-family-lg-display;
+      @return variable.$font-family-lg-display;
     }
   }
 }
