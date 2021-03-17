@@ -7,7 +7,7 @@
 @function calc-track($x) {
   $x: ($x / 1000);
   $e: math.pow(10, 13);
-  $x: math.round($x * $e) / $e;
+  $x: math.ceil($x * $e) / $e;
   
   @debug $x;
   @return $x * 1em;
