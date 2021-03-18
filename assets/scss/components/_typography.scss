@@ -1,0 +1,10 @@
+@use '../abstracts/mixins/typography/index' as font;
+
+
+.largetitle {
+  @include font.typography(34, 'bold');
+}
+
+.title1 {
+  @include font.typography(28, 'bold');
+}

@@ -1,2 +1,5 @@
 @use 'base/reset';
 @use 'base/typography';
+
+@use 'components/typography' as component_typography;
+@use 'components/button';
