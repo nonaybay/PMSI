@@ -1,0 +1,55 @@
+@use '../abstracts/functions/color/index' as color;
+@use '../abstracts/mixins/typography/index' as font;
+
+
+.main {
+  display: block;
+  position: relative;
+  max-width: 2560px;
+  margin: 0 auto;
+}
+
+$curr_fase-color: color.get-color('red');
+
+.covid {
+  width: 100%;
+
+  > div {
+    background-color: $curr_fase-color;
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 0px;
+    border-style: none;
+    overflow: visible;
+    border-left-width: 0px;
+    border-right-width: 0px;
+
+    > div {
+      width: 100%;
+      position: relative;
+      box-sizing: border-box;
+
+      span {
+        @include font.typography(17, 'regular');
+
+        padding: 1em 0;
+        background: $curr_fase-color;
+        color: #ffffff;
+        margin-top: 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+          color: inherit;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
