@@ -6,6 +6,10 @@
   margin: 0;
   outline: none;
   padding: 0;
+  font-synthesis: none;
+  -moz-font-feature-settings: "kern";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 *::before, *::after {
   box-sizing: inherit;
@@ -21,10 +25,6 @@ html {
   background: white;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-body {
-  padding: 1.2941176471em;
 }
 
 :root {
@@ -201,6 +201,74 @@ p + .body {
   }
 }
 
+.title2 {
+  font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Compact Display", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+  font-size: 1.2941176471em;
+  font-weight: 700;
+  letter-spacing: 0.016em;
+  line-height: 1.2727272727;
+}
+.title2 + .body {
+  margin-top: 1.6470588235em;
+}
+@media screen and (min-width: 640px) {
+  .title2 {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Pro Display", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    letter-spacing: -0.012em;
+  }
+}
+
+.title3 {
+  font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Compact Display", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+  font-size: 1.1764705882em;
+  font-weight: 700;
+  letter-spacing: 0.018em;
+  line-height: 1.25;
+}
+.title3 + .body {
+  margin-top: 1.6470588235em;
+}
+@media screen and (min-width: 640px) {
+  .title3 {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Pro Display", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    letter-spacing: -0.023em;
+  }
+}
+
+.headline {
+  font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Compact Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.022em;
+  line-height: 1.2941176471;
+}
+.headline + .body {
+  margin-top: 1.6470588235em;
+}
+@media screen and (min-width: 640px) {
+  .headline {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Pro Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    letter-spacing: -0.026em;
+  }
+}
+
+.body {
+  font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Compact Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0.022em;
+  line-height: 1.2941176471;
+}
+.body + .body {
+  margin-top: 1.6470588235em;
+}
+@media screen and (min-width: 640px) {
+  .body {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Pro Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    letter-spacing: -0.026em;
+  }
+}
+
 button {
   background: none;
   border: none;
@@ -324,6 +392,820 @@ button {
 .button__segmented .button.selected {
   background-color: white;
   box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+#ac-gn-segmentbar {
+  font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Compact Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+  font-size: 0.7058823529em;
+  font-weight: 400;
+  letter-spacing: 0.046em;
+  line-height: 1.3333333333;
+  background: transparent;
+  top: -40px;
+  left: 0;
+  min-width: 100%;
+  width: 100%;
+  height: 40px;
+  z-index: 9998;
+}
+#ac-gn-segmentbar + .body {
+  margin-top: 1.6470588235em;
+}
+@media screen and (min-width: 640px) {
+  #ac-gn-segmentbar {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Pro Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    letter-spacing: 0em;
+  }
+}
+
+#ac-gn-menustate {
+  display: none;
+}
+@media (max-width: 640px) {
+  #ac-gn-menustate:checked ~ #ac-globalnav {
+    background: #1c1c1e;
+    height: 100%;
+    transition: background 360ms cubic-bezier(0.32, 0.08, 0.24, 1) 0s, height 560ms cubic-bezier(0.52, 0.16, 0.24, 1) 0s;
+  }
+  #ac-gn-menustate:checked ~ #ac-globalnav .ac-gn-list {
+    transition-delay: 0s;
+    visibility: visible;
+  }
+  #ac-gn-menustate:checked ~ #ac-globalnav .ac-gn-item-menu {
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+  }
+  #ac-gn-menustate:checked ~ #ac-globalnav .ac-gn-menuicon-bread-top {
+    transform: rotate(45deg);
+    transition: transform 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  }
+  #ac-gn-menustate:checked ~ #ac-globalnav .ac-gn-menuicon-bread-bottom {
+    transform: rotate(-45deg);
+    transition: transform 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  }
+  #ac-gn-menustate:checked ~ #ac-globalnav .ac-gn-menuicon-bread-crust-top,
+#ac-gn-menustate:checked ~ #ac-globalnav .ac-gn-menuicon-bread-crust-bottom {
+    transform: none;
+    transition: transform 0.1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.1008s;
+  }
+}
+
+#ac-globalnav {
+  font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Compact Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0.022em;
+  line-height: 1.2941176471;
+  backdrop-filter: saturate(180%) blur(13px);
+  background: rgba(0, 0, 0, 0.92);
+  background-color: rgba(0, 0, 0, 0.87);
+  box-sizing: content-box;
+  display: block;
+  font-weight: normal;
+  height: 48px;
+  left: 0;
+  max-height: 44px;
+  min-width: 1024px;
+  position: absolute;
+  right: 0;
+  text-size-adjust: 100%;
+  top: 0;
+  user-select: none;
+  width: 100%;
+  z-index: 9999;
+}
+#ac-globalnav + .body {
+  margin-top: 1.6470588235em;
+}
+@media screen and (min-width: 640px) {
+  #ac-globalnav {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Pro Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    letter-spacing: -0.026em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #ac-globalnav {
+    min-width: 320px;
+  }
+}
+@media (max-width: 640px) {
+  #ac-globalnav {
+    backdrop-filter: none;
+    max-height: none;
+    overflow-y: hidden;
+    transition: background 0.44s cubic-bezier(0.52, 0.16, 0.24, 1) 0.2s, height 0.56s cubic-bezier(0.52, 0.16, 0.24, 1) 0s;
+  }
+}
+#ac-globalnav ul {
+  list-style: none;
+}
+#ac-globalnav .ac-gn-content {
+  margin: 0 auto;
+  max-width: 890.4347826087px;
+  padding: 0 22px;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 640px) {
+  #ac-globalnav .ac-gn-content {
+    height: 100%;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+#ac-globalnav .ac-gn-header {
+  display: none;
+  height: 48px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+@media (max-width: 640px) {
+  #ac-globalnav .ac-gn-header {
+    display: block;
+  }
+}
+#ac-globalnav .ac-gn-header .ac-gn-item {
+  height: 48px;
+}
+#ac-globalnav .ac-gn-header .ac-gn-logo {
+  left: 50%;
+  margin-left: -68px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 116px;
+  z-index: 1;
+}
+@media (max-width: 640px) {
+  #ac-globalnav .ac-gn-header .ac-gn-logo {
+    display: block;
+  }
+}
+#ac-globalnav .ac-gn-header .ac-gn-link {
+  height: 48px;
+  line-height: 2.82353em;
+}
+@media (max-width: 640px) {
+  #ac-globalnav .ac-gn-logo {
+    display: none;
+  }
+}
+#ac-globalnav .ac-gn-link-text {
+  padding: 0;
+  position: relative;
+}
+@media (max-width: 640px) {
+  #ac-globalnav .ac-gn-link-text {
+    line-height: 2.5em;
+  }
+}
+#ac-globalnav .ac-gn-link-logo {
+  background-size: 36px;
+  background-image: url("https://santaisabel.sp.gov.br/portal/wp-content/uploads/2019/10/cropped-logo-MSI-350x87-1-copy.png");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/24/Brasao-santaisabel.png");
+  background-image: url("https://santaisabel.sp.gov.br/conheca-a-cidade/images/logo.png");
+  width: 36px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (max-width: 640px) {
+  #ac-globalnav .ac-gn-link-logo {
+    background-position: 11px 11px;
+    background-position: center;
+  }
+}
+#ac-globalnav .ac-gn-menuicon {
+  border-bottom: none;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 48px;
+  z-index: 2;
+}
+#ac-globalnav .ac-gn-menuicon-label {
+  cursor: pointer;
+  display: block;
+  height: 48px;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+  width: 48px;
+  z-index: 3;
+  -webkit-tap-highlight-color: transparent;
+}
+#ac-globalnav .ac-gn-menuicon-label:hover {
+  opacity: 1;
+}
+#ac-globalnav .ac-gn-menuicon-bread {
+  height: 30px;
+  left: 9px;
+  position: absolute;
+  top: 9px;
+  transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+  width: 30px;
+  z-index: 3;
+}
+#ac-globalnav .ac-gn-menuicon-bread-top {
+  transform: none;
+  transition: transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0s;
+  z-index: 4;
+}
+#ac-globalnav .ac-gn-menuicon-bread-bottom {
+  transform: none;
+  transition: transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0s;
+}
+#ac-globalnav .ac-gn-menuicon-bread-crust {
+  background-color: white;
+  border-radius: 0.5px;
+  display: block;
+  height: 1px;
+  left: 7px;
+  position: absolute;
+  width: 17px;
+  z-index: 1;
+}
+#ac-globalnav .ac-gn-menuicon-bread-crust-top {
+  top: 14px;
+  transform: translateY(-3px);
+  transition: transform 0.1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.1008s;
+}
+#ac-globalnav .ac-gn-menuicon-bread-crust-bottom {
+  bottom: 14px;
+  transform: translateY(3px);
+  transition: transform 0.1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.1008s;
+}
+#ac-globalnav .ac-gn-list {
+  cursor: default;
+  display: flex;
+  height: 44px;
+  justify-content: space-between;
+  margin: 0 -10px;
+  user-select: none;
+  width: auto;
+}
+@media (max-width: 640px) {
+  #ac-globalnav .ac-gn-list {
+    bottom: 0;
+    box-sizing: border-box;
+    display: block;
+    height: auto;
+    left: 0;
+    margin: 0 auto;
+    max-width: 554px;
+    overflow-y: auto;
+    padding: 55px 55px 8px;
+    position: absolute;
+    right: 0;
+    top: 3.52941em;
+    transition: visibility 0s linear 1s;
+    visibility: hidden;
+    z-index: 1;
+  }
+  #ac-globalnav .ac-gn-list .ac-gn-logo {
+    display: none;
+  }
+  #ac-globalnav .ac-gn-list .ac-gn-link-text {
+    height: auto;
+    overflow: visible;
+    position: static;
+    top: initial;
+    visibility: visible;
+    width: auto;
+  }
+}
+#ac-globalnav .ac-gn-item {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 44px;
+  position: relative;
+  vertical-align: top;
+  z-index: 1;
+}
+@media (max-width: 640px) {
+  #ac-globalnav .ac-gn-item {
+    height: 44px;
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  #ac-globalnav .ac-gn-item-menu {
+    opacity: 0;
+    pointer-events: none;
+  }
+  #ac-globalnav .ac-gn-item-menu::before {
+    background-color: #d1d1d6;
+  }
+  #ac-globalnav .ac-gn-item-menu:nth-child(3)::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+  }
+  #ac-globalnav .ac-gn-item-menu:nth-child(4)::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+  }
+  #ac-globalnav .ac-gn-item-menu:nth-child(5)::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+  }
+  #ac-globalnav .ac-gn-item-menu:nth-child(6)::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+  }
+  #ac-globalnav .ac-gn-item-menu:nth-child(7)::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+  }
+  #ac-globalnav .ac-gn-item-menu:nth-child(8)::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+  }
+  #ac-globalnav .ac-gn-item-menu:nth-child(2) {
+    padding-top: 1px;
+    transform: translateY(-44px);
+  }
+  #ac-globalnav .ac-gn-item-menu:nth-child(3) {
+    transform: translateY(-40px);
+  }
+  #ac-globalnav .ac-gn-item-menu:nth-child(4) {
+    transform: translateY(-36px);
+  }
+  #ac-globalnav .ac-gn-item-menu:nth-child(5) {
+    transform: translateY(-32px);
+  }
+  #ac-globalnav .ac-gn-item-menu:nth-child(6) {
+    transform: translateY(-28px);
+  }
+  #ac-globalnav .ac-gn-item-menu:nth-child(7) {
+    transform: translateY(-24px);
+  }
+  #ac-globalnav .ac-gn-item-menu:nth-child(8) {
+    transform: translateY(-20px);
+  }
+  #ac-globalnav .ac-gn-item-menu .ac-gn-link {
+    display: block;
+    max-width: none;
+    outline-offset: 0;
+    padding: 0;
+    width: auto;
+  }
+}
+#ac-globalnav .ac-gn-link {
+  font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Compact Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+  font-size: 0.8235294118em;
+  font-weight: 400;
+  letter-spacing: 0.035em;
+  line-height: 1.3571428571;
+  color: #f2f2f7;
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  opacity: 0.8;
+  outline-offset: -7px;
+  padding: 0 10px;
+  position: relative;
+  text-decoration: none;
+  transition: opacity 333ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms;
+  white-space: nowrap;
+  z-index: 1;
+  -webkit-tap-highlight-color: transparent;
+}
+#ac-globalnav .ac-gn-link + .body {
+  margin-top: 1.6470588235em;
+}
+@media screen and (min-width: 640px) {
+  #ac-globalnav .ac-gn-link {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Pro Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    letter-spacing: -0.011em;
+  }
+}
+#ac-globalnav .ac-gn-link:hover {
+  opacity: 1;
+}
+@media (max-width: 640px) {
+  #ac-globalnav .ac-gn-link {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Compact Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 0.022em;
+    line-height: 1.2941176471;
+  }
+  #ac-globalnav .ac-gn-link + .body {
+    margin-top: 1.6470588235em;
+  }
+}
+@media screen and (max-width: 640px) and (min-width: 640px) {
+  #ac-globalnav .ac-gn-link {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Pro Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    letter-spacing: -0.026em;
+  }
+}
+
+.localnav-menustate {
+  display: none;
+}
+@media (max-width: 640px) {
+  .localnav-menustate:checked ~ .localnav .localnav-menu-tray {
+    max-height: 400px;
+    max-height: calc(100vh - 34px - 34px);
+    overflow-y: auto;
+    pointer-events: auto;
+    transition-delay: 0.2s, 0s;
+    visibility: visible;
+  }
+  .localnav-menustate:checked ~ .localnav .localnav-menu-items {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition-delay: 0.2s, 0.4s;
+  }
+  .localnav-menustate:checked ~ .localnav .localnav-menu-link {
+    opacity: 0.88;
+  }
+  .localnav-menustate:checked ~ .localnav .localnav-menucta-chevron {
+    transform: translateY(-8px);
+  }
+  .localnav-menustate:checked ~ .localnav .localnav-menucta-chevron::before {
+    transform-origin: 100% 0%;
+    transform: rotate(-34deg) scaleY(1.1);
+  }
+  .localnav-menustate:checked ~ .localnav .localnav-menucta-chevron::after {
+    transform-origin: 0% 0%;
+    transform: rotate(34deg) scaleY(1.1);
+  }
+}
+
+.localnav {
+  height: 55px;
+  left: 0;
+  min-width: 1024px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9997;
+}
+.localnav * {
+  box-sizing: content-box;
+}
+@media (max-width: 1024px) {
+  .localnav {
+    min-width: 320px;
+  }
+}
+@media (max-width: 640px) {
+  .localnav {
+    height: 48px;
+  }
+}
+.localnav-wrapper {
+  height: auto;
+  left: 0;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.localnav-background {
+  backdrop-filter: saturate(180%) blur(13px);
+  background-color: rgba(255, 255, 255, 0.87);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: background-color 500ms cubic-bezier(0.28, 0.11, 0.32, 1);
+  width: 100%;
+  z-index: 1;
+}
+.localnav-background:after {
+  background-color: rgba(0, 0, 0, 0.11);
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  margin-left: -490px;
+  position: absolute;
+  top: 100%;
+  width: 980px;
+  z-index: 1;
+}
+@media (max-width: 1024px) {
+  .localnav-background:after {
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.localnav-content {
+  margin: 0 auto;
+  max-width: 980px;
+  padding: 0 22px;
+  position: relative;
+  z-index: 2;
+}
+.localnav-content:after {
+  clear: both;
+}
+@media (max-width: 640px) {
+  .localnav-content {
+    padding: 0 34px;
+  }
+}
+.localnav-title {
+  font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Compact Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+  font-size: 1em;
+  font-weight: 900;
+  letter-spacing: 0.022em;
+  line-height: 1.2941176471;
+  color: black;
+  cursor: default;
+  display: block;
+  float: left;
+  height: 52px;
+  line-height: 31px;
+  margin: 14px 0 -14px;
+  padding: 0;
+  transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+  white-space: nowrap;
+}
+.localnav-title + .body {
+  margin-top: 1.6470588235em;
+}
+@media screen and (min-width: 640px) {
+  .localnav-title {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Pro Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    letter-spacing: -0.026em;
+  }
+}
+@media (max-width: 640px) {
+  .localnav-title {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Compact Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    font-size: 1.1176470588em;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    line-height: 1.2631578947;
+    display: inline-block;
+    height: 48px;
+    line-height: 35px;
+    margin: 13px 0 -13px;
+  }
+  .localnav-title + .body {
+    margin-top: 1.6470588235em;
+  }
+}
+@media screen and (max-width: 640px) and (min-width: 640px) {
+  .localnav-title {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Pro Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    letter-spacing: -0.024em;
+  }
+}
+.localnav-title a {
+  color: currentColor;
+  display: inline-block;
+  flex-direction: column-reverse;
+  letter-spacing: inherit;
+  line-height: inherit;
+  margin: 0;
+  opacity: 0.89;
+  text-decoration: none;
+  transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+  white-space: nowrap;
+}
+.localnav-menu {
+  font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Compact Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+  font-size: 0.7058823529em;
+  font-weight: 400;
+  letter-spacing: 0.046em;
+  line-height: 1.3333333333;
+  float: right;
+  line-height: 1;
+  margin-top: -3px;
+}
+.localnav-menu + .body {
+  margin-top: 1.6470588235em;
+}
+@media screen and (min-width: 640px) {
+  .localnav-menu {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Pro Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    letter-spacing: 0em;
+  }
+}
+@media (max-width: 640px) {
+  .localnav-menu {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Compact Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    font-size: 0.8823529412em;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.3333333333;
+    line-height: 1;
+    margin-top: 0;
+    padding-top: 0;
+    width: 100%;
+  }
+  .localnav-menu + .body {
+    margin-top: 1.6470588235em;
+  }
+}
+@media screen and (max-width: 640px) and (min-width: 640px) {
+  .localnav-menu {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Pro Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    letter-spacing: -0.016em;
+  }
+}
+.localnav-menu-tray {
+  float: left;
+  padding-top: 22px;
+}
+@media (max-width: 640px) {
+  .localnav-menu-tray {
+    float: none;
+    max-height: 0;
+    overflow: hidden;
+    padding-top: 0;
+    pointer-events: none;
+    transition: max-height 0.5s cubic-bezier(0.28, 0.11, 0.32, 1) 0.4s, visibility 0s linear 1s;
+    visibility: hidden;
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .localnav-menu-items {
+    opacity: 0;
+    padding: 34px 21px 21px;
+    transform: translate3d(0, -144px, 0);
+    transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1) 0.5s, opacity 0.7s cubic-bezier(0.23, 1, 0.32, 1) 0.2s;
+  }
+}
+.localnav-menu-item {
+  margin-left: 10px;
+  float: left;
+  list-style: none;
+}
+@media (max-width: 640px) {
+  .localnav-menu-item {
+    display: inline-block;
+    float: none;
+    height: 44px;
+    margin-left: 0;
+    width: 100%;
+  }
+  .localnav-menu-item:first-child .localnav-menu-link {
+    border-top: 0;
+  }
+}
+.localnav-menu-link {
+  font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Compact Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+  font-size: 1.1176470588em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.2631578947;
+  color: black;
+  display: inline-block;
+  line-height: 22px;
+  white-space: nowrap;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.localnav-menu-link + .body {
+  margin-top: 1.6470588235em;
+}
+@media screen and (min-width: 640px) {
+  .localnav-menu-link {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Pro Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    letter-spacing: -0.024em;
+  }
+}
+@media (max-width: 640px) {
+  .localnav-menu-link {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Compact Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 0.022em;
+    line-height: 1.2941176471;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.87);
+    display: flex;
+    height: 100%;
+    line-height: 1.3;
+    opacity: 0;
+    transform: translate3d(0, -25px, 0);
+    transition: 0.5s ease;
+    transition-property: transform, opacity;
+  }
+  .localnav-menu-link + .body {
+    margin-top: 1.6470588235em;
+  }
+}
+@media screen and (max-width: 640px) and (min-width: 640px) {
+  .localnav-menu-link {
+    font-family: -apple-system, BlinkMacSystemFont, X-LocaleSpecific, "SF Pro Text", "San Francisco", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Tahoma", "Microsoft Sans Serif", "Roboto", "Droid Sans", "Ubuntu", "Cantarell", "Noto Sans", "SF Pro Icons", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Material Icons", sans-serif, system-ui;
+    letter-spacing: -0.026em;
+  }
+}
+.localnav-menu-link:hover {
+  opacity: 1;
+}
+.localnav-menucta-anchor {
+  display: none;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1px;
+  z-index: 10;
+}
+.localnav ul {
+  list-style: none;
+  margin: 0;
+}
+.localnav-actions {
+  float: left;
+  padding-top: 18px;
+}
+@media (max-width: 640px) {
+  .localnav-actions {
+    right: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+  }
+}
+.localnav-action {
+  margin-left: 24px;
+  float: left;
+}
+.localnav-action-menucta {
+  margin-top: -2px;
+  position: relative;
+  z-index: 1;
+  display: none;
+}
+@media (max-width: 640px) {
+  .localnav-action-menucta {
+    float: left;
+    display: block;
+  }
+}
+.localnav-menucta {
+  margin-right: -11px;
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+  width: 40px;
+  height: 30px;
+  -webkit-tap-highlight-color: transparent;
+}
+.localnav-menucta-chevron {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1), transform-origin 1s cubic-bezier(0.86, 0, 0.07, 1);
+  transform: translateY(0);
+  opacity: 0.8;
+}
+.localnav-menucta-chevron::before, .localnav-menucta-chevron::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 19px;
+  width: 11px;
+  height: 1px;
+  z-index: 1;
+  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1), transform-origin 1s cubic-bezier(0.86, 0, 0.07, 1);
+  right: 50%;
+  border-radius: 0.5px 0 0 0.5px;
+  background: black;
+  transform-origin: 100% 100%;
+  transform: rotate(40deg) scaleY(1.1);
+}
+.localnav-menucta-chevron::after {
+  right: auto;
+  left: 50%;
+  transform-origin: 0% 100%;
+  transform: rotate(-40deg) scaleY(1.1);
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -8,3 +8,19 @@
 .title1 {
   @include font.typography(28, 'bold');
 }
+
+.title2 {
+    @include font.typography(22, 'bold');
+}
+
+.title3 {
+    @include font.typography(20, 'bold');
+}
+
+.headline {
+    @include font.typography(17, 'bold');
+}
+
+.body {
+    @include font.typography(17, 'regular');
+}
